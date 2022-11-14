@@ -1,25 +1,17 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
-import './layout.css';
+import * as React from 'react'
+import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
+import './layout.css'
 
 function Header() {
   return (
     <header style={styles.headerStyle}>
-      {/* <img
-      alt="Megan Allen Logo"
-      height={20}
-      style={{ margin: 0 }}
-      src="../images/iPhone1.png"
-    /> */}
-
-      <Link
-        to="/"
-        style={styles.linkStyle}
-      >
-        <StaticImage alt="Megan Allen Logo" width={250} src="../images/MeganAllen.png" />
-      </Link>
-      <div style={styles.link}>
+      <div>
+        <Link to="/">
+          <StaticImage alt="Megan Allen Logo" width={250} src="../images/MeganAllen.png" />
+        </Link>
+      </div>
+      <div>
         <Link
           activeClassName="secondary-link"
           to="../work"
@@ -50,24 +42,21 @@ function Header() {
         </Link>
       </div>
     </header>
-  );
+  )
 }
 
 const styles = {
   headerStyle: {
-    margin: '0 auto',
-    padding: 'var(--space-4) var(--size-gutter)',
+    padding: 'var(--space-4) var(--space-5) var(--space-4) 0',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    width: '100%',
+    marginBottom: `var(--space-6)`
   },
-  link: {
-    display: 'flex',
-    justifyContent: 'flex-end',
-  },
+
   linkStyle: {
     fontSize: 'var(--font-lg)',
-    // textDecoration: `none`,
     margin: '10px',
 
   },

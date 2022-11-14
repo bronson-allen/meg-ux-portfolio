@@ -25,15 +25,16 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main style={{
+          maxWidth: `var(--size-content)`,
           margin: `0 auto`,
-          padding: `var(--size-gutter)`,
           display: 'flex',
           flexDirection: 'column',
+          padding: '0 40px',
         }}
         >
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
           {children}
         </main>
         <footer

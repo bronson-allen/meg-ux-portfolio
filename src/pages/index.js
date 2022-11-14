@@ -45,27 +45,50 @@ const IndexPage = () => {
   return (
     <Layout>
       <div style={styles.titleContainer}>
-        <h1>Hello, I&apos;m Megan!</h1>
+        <h3 style={{color: `var(--color-primary)`}}>Hello, I&apos;m Megan!</h3>
         <p>I am a User Experience Designer, based in Chicago, currently creating digital experiences at Hoverstate.</p>
       </div>
-      <div style={styles.projectsContainer}>
-        {projects.map((project, i) => (
-          <ProjectCard key={i} title={project.title} name={project.name} imgSrc={project.imgSrc} url={project.url} text={project.text} />
-        ))}
+      <div>
+        <div style={styles.row}>
+          {projects.slice(0, 2).map((project, i) => (
+            <div  key={i} style={styles.column}>
+                <ProjectCard title={project.title} name={project.name} imgSrc={project.imgSrc} url={project.url} text={project.text} />
+            </div>
+          ))}
+        </div>
+        <div style={styles.row}>
+          {projects.slice(2).map((project, i) => (
+            <div  key={i} style={styles.column}>
+                <ProjectCard title={project.title} name={project.name} imgSrc={project.imgSrc} url={project.url} text={project.text} />
+            </div>
+          ))}
+        </div>
       </div>
     </Layout>
   )
 }
 
 const styles = {
-  projectsContainer: {
-    display: 'flex', 
-    flexWrap: 'wrap', 
-    justifyContent: 'center'
-  },
-  titleContainer: {
+
+  row: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     width: '100%',
   },
+
+  column: {
+    display: 'flex',
+    flexDirection: 'column',
+    flexBasis: '100%',
+    flex: 1,
+  },
+
+  titleContainer: {
+    alignSelf: 'flex-start',
+    width: '100%'
+  },
+
 }
 
 /**

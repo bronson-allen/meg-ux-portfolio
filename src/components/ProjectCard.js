@@ -40,7 +40,7 @@ const styles = {
         padding: '16px'
     },
     image: {
-        maxWidth: '45%',
+        maxWidth: '460px',
     },
     link: {
         display: 'flex',
