@@ -1,0 +1,65 @@
+
+import * as React from "react"
+import PropTypes from 'prop-types'
+import { Link } from "gatsby"
+import "./layout.css"
+import arrowIcon from '../images/arrowIcon.png'
+
+const ProjectCard = ({title, name, imgSrc, url, text}) => {
+
+    console.log(imgSrc)
+
+    return (
+        <div style={styles.mainContainer}>
+            <Link to={url}>
+                <div style={styles.imageBox}>
+                    <img style={styles.image} src={imgSrc}/>
+                </div>
+            </Link>
+            <h3>{title}</h3>
+            <h2 style={styles.name}>{name}</h2>
+            <p>{text}</p>
+            <Link to={url} className={'secondary-color'} style={styles.link}><p>Full Case Study</p><img width={20} src={arrowIcon} style={styles.icon}/></Link>
+        </div>
+    )
+}
+
+const styles = {
+    mainContainer: {
+        marginBottom: `var(--space-6)`,
+    },
+    imageBox: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '632px',
+        height: '450px',
+        background: '#FFFFFF',
+        boxShadow: '2px 6px 20px 12px rgba(160, 160, 160, 0.25)',
+        borderRadius: '12px',
+        padding: '16px'
+    },
+    image: {
+        maxWidth: '45%',
+    },
+    link: {
+        display: 'flex',
+        alignItems: 'center',
+    },
+    icon: {
+        marginLeft: '9px'
+    },
+    name:{
+        color: `var(--color-primary-dark)`
+    },
+}
+
+ProjectCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+}
+
+export default ProjectCard

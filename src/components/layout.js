@@ -7,6 +7,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from 'prop-types'
 
 import Header from "./header"
 import "./layout.css"
@@ -28,8 +29,9 @@ const Layout = ({ children }) => {
       <div>
         <main style={{
           margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
           padding: `var(--size-gutter)`,
+          display: 'flex',
+          flexDirection: 'column',
         }}
         >
           {children}
@@ -50,6 +52,10 @@ const Layout = ({ children }) => {
       </div>
     </>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node
 }
 
 export default Layout

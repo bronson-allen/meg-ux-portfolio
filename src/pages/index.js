@@ -1,166 +1,84 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+import ProjectCard from "../components/ProjectCard"
 
-const links = [
+import iphoneImage from '../images/iPhone1.png'
+import macbookImage1 from '../images/iPhone1.png'
+import macImage from '../images/iPhone1.png'
+import macbookImage2 from '../images/iPhone1.png'
+
+const projects = [
   {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+    title: 'Keys to Success',
+    name: 'Admin App Dashboard',
+    url: 'resume',
+    imgSrc: macbookImage1,
+    text: 'Created an experience with quick access to the most used features throughout the already existing application. Using the design system, built unique experiences for each feature that automatically updates upon login.',
   },
   {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+    title: 'Keys to Success',
+    name: 'College Application Checklist',
+    url: 'resume',
+    imgSrc: iphoneImage,
+    text: 'Created a detailed checklist that helps and encourages high school students apply for colleges in their state. This checklist provides links to resources within the app itself and gives access to other state wide resources. ',
   },
   {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+    title: 'Kornerstone Administrative Services',
+    name: 'Dealership Product Creation',
+    url: 'resume',
+    imgSrc: macImage,
+    text: 'Provided a process for car dealership owners to sell various maintenance services at their dealerships. These services are available for use at multiple dealerships in the system.',
   },
   {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+    title: 'Success in Education',
+    name: 'Digital Coupon Book',
+    url: 'resume',
+    imgSrc: macbookImage2,
+    text: 'Turned a paper/in-person process of delivering coupons to participants involved in Success in Education programs into a streamlined digital experience in which users can browse and redeem coupons for local businesses.',
   },
 ]
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
+const IndexPage = () => {
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-
-const IndexPage = () => (
-  <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/iPhone1.png"
-        loading="eager"
-        width={200}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Hello, I'm Megan!
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
+  return (
+    <Layout>
+      <div style={styles.titleContainer}>
+        <h1>Hello, I&apos;m Megan!</h1>
+        <p>I am a User Experience Designer, based in Chicago, currently creating digital experiences at Hoverstate.</p>
+      </div>
+      <div style={styles.projectsContainer}>
+        {projects.map((project, i) => (
+          <ProjectCard key={i} title={project.title} name={project.name} imgSrc={project.imgSrc} url={project.url} text={project.text} />
         ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
-    </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
-  </Layout>
-)
+      </div>
+    </Layout>
+  )
+}
+
+const styles = {
+  projectsContainer: {
+    display: 'flex', 
+    flexWrap: 'wrap', 
+    justifyContent: 'center'
+  },
+  titleContainer: {
+    width: '100%',
+  },
+}
 
 /**
  * Head export to define metadata for the page
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+ 
+{moreLinks.map((link, i) => (
+   <React.Fragment key={link.url}>
+     <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+     {i !== moreLinks.length - 1 && <> · </>}
+   </React.Fragment>
+ ))}
  */
 export const Head = () => <Seo title="Home" />
 
