@@ -64,7 +64,7 @@ const styles = {
     justifyContent: `flex-end`,
   },
   linkStyle: {
-    fontSize: `var(--font-sm)`,
+    fontSize: `var(--font-lg)`,
     // textDecoration: `none`,
     margin: '10px',
     

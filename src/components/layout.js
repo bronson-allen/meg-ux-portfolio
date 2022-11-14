@@ -25,23 +25,27 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
+      <div>
+        <main style={{
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,
           padding: `var(--size-gutter)`,
         }}
-      >
-        <main>{children}</main>
+        >
+          {children}
+        </main>
         <footer
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
+            width: '100%',
+            height: '300px',
+            backgroundColor: '#EEF7FA'
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
+          © {new Date().getFullYear()} &middot; Built by
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://www.bronsonzallen.com">Bronson Z Allen</a>
         </footer>
       </div>
     </>

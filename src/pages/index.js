@@ -109,6 +109,45 @@ const IndexPage = () => (
         </li>
       ))}
     </ul>
+    <ul className={styles.list}>
+      {links.map(link => (
+        <li key={link.url} className={styles.listItem}>
+          <a
+            className={styles.listItemLink}
+            href={`${link.url}${utmParameters}`}
+          >
+            {link.text} ↗
+          </a>
+          <p className={styles.listItemDescription}>{link.description}</p>
+        </li>
+      ))}
+    </ul>
+    <ul className={styles.list}>
+      {links.map(link => (
+        <li key={link.url} className={styles.listItem}>
+          <a
+            className={styles.listItemLink}
+            href={`${link.url}${utmParameters}`}
+          >
+            {link.text} ↗
+          </a>
+          <p className={styles.listItemDescription}>{link.description}</p>
+        </li>
+      ))}
+    </ul>
+    <ul className={styles.list}>
+      {links.map(link => (
+        <li key={link.url} className={styles.listItem}>
+          <a
+            className={styles.listItemLink}
+            href={`${link.url}${utmParameters}`}
+          >
+            {link.text} ↗
+          </a>
+          <p className={styles.listItemDescription}>{link.description}</p>
+        </li>
+      ))}
+    </ul>
     {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}${utmParameters}`}>{link.text}</a>
