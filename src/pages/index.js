@@ -5,9 +5,9 @@ import Seo from "../components/seo"
 import ProjectCard from "../components/ProjectCard"
 
 import iphoneImage from '../images/iPhone1.png'
-import macbookImage1 from '../images/iPhone1.png'
-import macImage from '../images/iPhone1.png'
-import macbookImage2 from '../images/iPhone1.png'
+import macbookImage1 from '../images/macBookPro1.png'
+import macImage from '../images/mac.png'
+import macbookImage2 from '../images/macBookPro2.png'
 
 const projects = [
   {
