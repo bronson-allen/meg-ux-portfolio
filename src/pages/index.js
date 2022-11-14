@@ -73,16 +73,16 @@ const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/example.png"
+        src="../images/iPhone1.png"
         loading="eager"
-        width={64}
+        width={200}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>
-        Welcome to <b>Gatsby!</b>
+        Hello, I'm Megan!
       </h1>
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
