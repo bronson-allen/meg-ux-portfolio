@@ -81,7 +81,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     flexBasis: '100%',
-    flex: 1,
+    flex: 1
   },
 
   titleContainer: {

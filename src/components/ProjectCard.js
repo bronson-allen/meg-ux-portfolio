@@ -37,6 +37,7 @@ const styles = {
         background: '#FFFFFF',
         boxShadow: '2px 6px 20px 12px rgba(160, 160, 160, 0.25)',
         borderRadius: '12px',
+        marginBottom: `var(--space-5)`,
         padding: '16px'
     },
     image: {
