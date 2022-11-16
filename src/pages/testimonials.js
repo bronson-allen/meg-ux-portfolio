@@ -33,7 +33,7 @@ const TestimonialsPage = () => {
 
   return (
     <Layout>
-        <div>
+        <div style={styles.mainContainer}>
           <h1 style={styles.title}>Testimonials</h1>
           <div style={styles.row}>
             {testimonials.map((testimonial, i) => (
@@ -54,29 +54,30 @@ const TestimonialsPage = () => {
 }
 
 const styles = {
+  mainContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+  },  
   title: {
     alignSelf: 'center',
     justifySelf: 'center',
     color: `var(--color-primary-dark)`,
+    margin: `20px 0`,
   },
   row: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    display: 'table',
     width: '100%',
   },
 
   column: {
-    display: 'flex',
-    flexDirection: 'column',
-    flexBasis: '100%',
-    flex: 1
+    display: 'table-cell',
   },
 
   card: {
     width: '90%',
-    gap: '20px',
+    height: '878px',
     boxShadow: `0px 8px 20px 10px rgba(143, 143, 143, 0.25)`,
+    padding: `var(--space-5)`
   }
 }
 export const Head = () => <Seo title="Testimonials" />
