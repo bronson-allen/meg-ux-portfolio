@@ -52,7 +52,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'space-between',
     width: '100%',
-    margin: `var(--space-6) 0`
+    margin: `var(--space-5) 0`
   },
 
   linkStyle: {

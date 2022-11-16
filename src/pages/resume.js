@@ -14,12 +14,12 @@ const ResumePage = () => {
       <div style={styles.mainContainer}>
         <div style={styles.titleContainer}>
           <div style={styles.holder}></div>
-          <h2 style={styles.title}>Resume</h2>
+          <h1 style={styles.title}>Resume</h1>
           <a style={styles.downloadButton} href={resumePDF} download="MeganAllen_Resume">Download PDF</a>
         </div>
         <img style={styles.image} src={resumeImg}/>
+        <a style={styles.downloadButton} href={resumePDF} download="MeganAllen_Resume">Download PDF</a>
       </div>
-      <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 }
@@ -39,6 +39,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: `0 28px`,
+    margin: `20px 0`
   },
   title: {
     alignSelf: 'center',
