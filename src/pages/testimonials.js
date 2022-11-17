@@ -64,16 +64,20 @@ const styles = {
     margin: `20px 0`,
   },
   row: {
-    display: 'table',
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     width: '100%',
   },
-
   column: {
-    display: 'table-cell',
+    display: 'flex',
+    flexDirection: 'column',
+    flexBasis: '100%',
+    flex: 1
   },
-
   card: {
     width: '90%',
+    margin: `0 auto`,
     height: '878px',
     boxShadow: `0px 8px 20px 10px rgba(143, 143, 143, 0.25)`,
     padding: `var(--space-5)`
