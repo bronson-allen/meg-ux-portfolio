@@ -58,6 +58,7 @@ const styles = {
   },  
   image: {
     alignSelf: 'center',
+    maxWidth: '100%',
   },
   holder: {
     width: '150px',

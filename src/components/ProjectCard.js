@@ -32,7 +32,8 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '632px',
+        width: '95%',
+        minWidth: '300px',
         height: '450px',
         background: '#FFFFFF',
         boxShadow: '2px 6px 20px 12px rgba(160, 160, 160, 0.25)',
@@ -41,7 +42,7 @@ const styles = {
         padding: '16px'
     },
     image: {
-        maxWidth: '460px',
+        maxWidth: '70%',
     },
     link: {
         display: 'flex',

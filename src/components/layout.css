@@ -85,7 +85,6 @@ h1 > b {
 }
 img {
   border-style: none;
-  max-width: 100%;
 }
 button:hover {
   cursor: pointer;
@@ -236,6 +235,14 @@ pre tt:after {
 .secondary-link {
   color: var(--color-secondary);
   text-decoration: underline;
+}
+
+.color-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.italic {
+  font-style: italic;
 }
 
 

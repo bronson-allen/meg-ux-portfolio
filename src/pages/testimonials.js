@@ -60,7 +60,6 @@ const styles = {
   },  
   title: {
     alignSelf: 'center',
-    justifySelf: 'center',
     color: `var(--color-primary-dark)`,
     margin: `20px 0`,
   },
