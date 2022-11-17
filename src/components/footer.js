@@ -4,6 +4,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import './layout.css'
+import resumePDF from '../images/MeganAllen_Resume2021.pdf'
 
 function Header() {
   return (
@@ -19,13 +20,13 @@ function Header() {
         <div style={styles.column}>
           <h2>Connect</h2>
           <div style={styles.iconLinks}>
-            <a href="https://www.linkedin.com/in/megan-thomas14/">
+            <a href="https://www.linkedin.com/in/megan-thomas14/" target="_blank" rel="noreferrer">
               <StaticImage alt="Megan Allen Logo" width={40} src="../images/icon-linkedIn.png" />
             </a>
-            <a href="https://instagram.com/megspics2.0">
+            <a href="https://instagram.com/megspics2.0" target="_blank" rel="noreferrer">
               <StaticImage alt="Megan Allen Logo" width={40} src="../images/icon-instagram.png" />
             </a>
-            <a href="mailto:allen.megc@gmail.com">
+            <a href="mailto:allen.megc@gmail.com" target="_blank" rel="noreferrer">
               <StaticImage alt="Megan Allen Logo" width={40} src="../images/icon-mail.png" />
             </a>
           </div>
@@ -34,7 +35,7 @@ function Header() {
           <div style={styles.bar}></div>
         </div>
         <div style={styles.column}>
-          <h2>Download Resume</h2>
+          <h2><a href={resumePDF} download="MeganAllen_Resume">Download Resume</a></h2>
 
         </div>
       </div>
@@ -42,7 +43,7 @@ function Header() {
         <div style={styles.column}>
           <div>
           © {new Date().getFullYear()} &middot; Built by
-          <a href="https://www.bronsonzallen.com">Bronson Z Allen</a>
+          <a href="https://www.bronsonzallen.com" style={{marginLeft: '5px'}}>Bronson Z Allen</a>
           </div>
         </div>
       </div>
