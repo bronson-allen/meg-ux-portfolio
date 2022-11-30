@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'Keys to Success',
     name: 'Admin App Dashboard',
-    url: 'resume',
+    url: 'case-study-1',
     imgSrc: macbookImage1,
     text: 'Created an experience with quick access to the most used features throughout the already existing application. Using the design system, built unique experiences for each feature that automatically updates upon login.',
   },
@@ -106,3 +106,5 @@ const styles = {
 export const Head = () => <Seo title="Home" />
 
 export default IndexPage
+
+

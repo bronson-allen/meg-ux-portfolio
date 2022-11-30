@@ -73,9 +73,8 @@ strong {
 dfn {
   font-style: italic;
 }
-h1 {
-  margin: 0;
-
+h1,h2,h3 {
+  margin: var(--space-2) 0;
   padding: 0;
   line-height: var(--line-height-dense);
   letter-spacing: -0.01em;
@@ -100,11 +99,8 @@ samp {
 hr {
   box-sizing: content-box;
   overflow: visible;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
   padding: 0;
-  margin-bottom: calc(var(--space-4) - 1px);
+  margin: calc(var(--space-6) - 1px) 0;
   background: hsla(0, 0%, 0%, 0.2);
   border: none;
   height: 1px;
@@ -181,9 +177,9 @@ p *:last-child {
 li > p {
   margin-bottom: calc(var(--space-4) / 2);
 }
-p {
+/* p {
   max-width: 740px;
-}
+} */
 code {
   font-size: 0.875rem;
 }
