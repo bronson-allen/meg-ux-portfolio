@@ -241,4 +241,8 @@ pre tt:after {
   font-style: italic;
 }
 
+.textButton:hover {
+  cursor: pointer;
+}
+
 

@@ -177,7 +177,7 @@ const CaseStudyOne = () => (
         <p>Having the opportunity to create a solution to the problem and then, later, make it EVER BETTER was a great learning opportunity. The two designs showcase how much I improved as a designer in the eight months between both of these projects. Getting the chance to take a long step back and then re-address the problems gave me even more insight than I would have gotten on another type of project. Looking back, I think that I could have made the original version of the dashboard have more specific and interesting UI, but part of my tactic was to show how it could be so much better if they went through with the UI redo, so it worked out in the end. I also learned how much branding affects how I design. It was less challengeing the second time around when the overall look and feel of the site was more modern and less restrictive. </p>
       </div>
     </div>
-    <ScrollToTop />
+    <ScrollToTop showBelow={250} />
   </Layout>
 )
 
