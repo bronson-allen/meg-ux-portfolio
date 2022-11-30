@@ -1,29 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import * as React from 'react'
  import "./layout.css"
  import iconUpArrow from '../images/icon-upArrow.png'
  
- const ScrollToTop = ({showBelow}) => {
-
-    const [show, setShow] = useState(showBelow ? false : true)
-
-    const handleScroll = () => {
-        if (window.pageYOffset > showBelow) {
-            if (!show) setShow(true)
-        } else {
-            if (show) setShow(false)
-        }
-    }
+ const ScrollToTop = () => {
 
     const handleClick = () => {
-        window[`scrollTo`]({ top: 0, behavior: `smooth` })
+        window.scrollTo({top: 0, behavior: 'smooth'})
     }
-
-    useEffect(() => {
-        if (showBelow) {
-            window.addEventListener(`scroll`, handleScroll)
-            return () => window.removeEventListener(`scroll`, handleScroll)
-        }
-    })
 
    return (
      <>
