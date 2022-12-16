@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import "../components/layout.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import ScrollToTop from "../components/ScrollToTop"
 
 import iPhoneImage from '../images/iPhone1.png'
 import USHELogo from '../images/USHELogo.png'
@@ -14,7 +15,6 @@ import cs2DesignSystemColors from '../images/cs2DesignSystemColors.png'
 import cs2DesignSystemText from '../images/cs2DesignSystemText.png'
 import cs2DesignSystemButtons from '../images/cs2DesignSystemButtons.png'
 import cs2DesignSystemComponents from '../images/cs2DesignSystemComponents.png'
-
 
 const CaseStudyTwo = () => (
   <Layout>
@@ -184,6 +184,8 @@ const CaseStudyTwo = () => (
         <p>Because there were many stakeholders from various organizations in this project, I learned how to strategize my designs based on many opinions (that didn’t always align). I was able to use my expertise in areas of design in a new way when presenting designs to large crowds with various goals associated within the groups. This project also helped me solidify my love for mobile design. Being constrained to a smaller rectangle of space is a challenge I am always eager to accept.</p>
       </div>
     </div>
+    <ScrollToTop showBelow={250} />
+
   </Layout>
 )
 

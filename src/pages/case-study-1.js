@@ -5,6 +5,7 @@ import "../components/layout.css"
 import Layout from "../components/layout"
 import ScrollToTop from "../components/ScrollToTop"
 import Seo from "../components/seo"
+
 import macbookImage1 from '../images/macBookPro1.png'
 import usersTable from '../images/usersTable.png'
 import cs1FeaturesChart from '../images/cs1FeaturesChart.png'
@@ -16,9 +17,6 @@ import cs1DesignSystemStyles from '../images/cs1DesignSystemStyles.png'
 import cs1DesignSystemComponents from '../images/cs1DesignSystemComponents.png'
 import cs1FinalDesign from '../images/cs1FinalDesign.png'
 import cs1ProductSuccess from '../images/cs1ProductSuccess.png'
-
-
-
 
 const CaseStudyOne = () => (
   <Layout>
