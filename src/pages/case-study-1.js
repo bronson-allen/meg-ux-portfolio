@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+import "../components/layout.css"
 import Layout from "../components/layout"
 import ScrollToTop from "../components/ScrollToTop"
 import Seo from "../components/seo"
@@ -17,9 +18,6 @@ import cs1FinalDesign from '../images/cs1FinalDesign.png'
 import cs1ProductSuccess from '../images/cs1ProductSuccess.png'
 
 
-
-
-import "../components/layout.css"
 
 
 const CaseStudyOne = () => (

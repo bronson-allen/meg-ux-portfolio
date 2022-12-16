@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Keys to Success',
     name: 'College Application Checklist',
-    url: 'resume',
+    url: 'case-study-2',
     imgSrc: iphoneImage,
     text: 'Created a detailed checklist that helps and encourages high school students apply for colleges in their state. This checklist provides links to resources within the app itself and gives access to other state wide resources. ',
   },
