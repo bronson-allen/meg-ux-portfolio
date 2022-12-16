@@ -27,7 +27,7 @@ const projects = [
   {
     title: 'Kornerstone Administrative Services',
     name: 'Dealership Product Creation',
-    url: 'resume',
+    url: 'case-study-3',
     imgSrc: macImage,
     text: 'Provided a process for car dealership owners to sell various maintenance services at their dealerships. These services are available for use at multiple dealerships in the system.',
   },
