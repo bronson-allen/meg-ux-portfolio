@@ -10,9 +10,9 @@
 module.exports = {
   siteMetadata: {
     title: `Megan Allen Design`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Megan Allen UX/UI Product design portfolio`,
     author: `@bronsonzallen`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://meganallendesign.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `gatsby-meganallen-portfolio`,
+        short_name: `portfolio`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website

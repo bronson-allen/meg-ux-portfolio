@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bronsonz/meganallendesign.com/
+    - /bin/cp -R public/* $DEPLOYPATH
