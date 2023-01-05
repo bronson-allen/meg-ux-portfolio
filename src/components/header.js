@@ -1,22 +1,22 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
-import './layout.css'
+import * as React from "react"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import "./layout.css"
 
 function Header() {
   return (
     <header style={styles.headerStyle}>
       <div>
         <Link to="/">
-          <StaticImage alt="Megan Allen Logo" width={250} src="../images/MeganAllen.png" />
+          <StaticImage
+            alt="Megan Allen Logo"
+            width={250}
+            src="../images/MeganAllen.png"
+          />
         </Link>
       </div>
       <div>
-        <Link
-          activeClassName="secondary-link"
-          to="../work"
-          style={styles.linkStyle}
-        >
+        <Link activeClassName="secondary-link" to="/" style={styles.linkStyle}>
           Work
         </Link>
         <Link
@@ -47,19 +47,18 @@ function Header() {
 
 const styles = {
   headerStyle: {
-    padding: 'var(--space-4) var(--space-5) var(--space-4) 0',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    width: '100%',
-    margin: `var(--space-5) 0`
+    padding: "var(--space-4) var(--space-5)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    maxWidth: `var(--size-content)`,
+    margin: `var(--space-5) 0`,
   },
 
   linkStyle: {
-    fontSize: 'var(--font-lg)',
-    margin: '10px',
-
+    fontSize: "var(--font-lg)",
+    margin: "10px",
   },
-};
+}
 
-export default Header;
+export default Header
