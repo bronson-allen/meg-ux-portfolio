@@ -330,15 +330,25 @@ pre tt:after {
 }
 
 .header-links-mobile {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 300px;
+  z-index: 99;
   padding: var(--space-4);
-  top: 110px;
-  right: 55px;
   background-color: var(--color-primary-dark);
-  min-width: 30%;
-  min-height: 260px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
 }
 
+.header-links-mobile.open {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+.header-links-close {
+  font-size: large;
+}
 .header-link-mobile {
   color: white;
 }

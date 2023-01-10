@@ -51,40 +51,45 @@ function Header() {
           src="../images/hamburgerMenu.png"
         />
       </button>
-      {isMenuOpen && (
-        <div className="header-links-mobile">
-          <div className="header-links-container-mobile">
-            <Link
-              activeClassName="secondary-link"
-              to="/"
-              className="header-link-mobile"
-            >
-              Work
-            </Link>
-            <Link
-              activeClassName="secondary-link"
-              to="../resume"
-              className="header-link-mobile"
-            >
-              Resume
-            </Link>
-            <Link
-              activeClassName="secondary-link"
-              to="../testimonials"
-              className="header-link-mobile"
-            >
-              Testimonials
-            </Link>
-            <Link
-              activeClassName="secondary-link"
-              to="../about"
-              className="header-link-mobile"
-            >
-              About
-            </Link>
-          </div>
+
+      <div className={`header-links-mobile ${isMenuOpen ? "open" : ""}`}>
+        <button
+          className="header-links-close"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          X
+        </button>
+        <div className="header-links-container-mobile">
+          <Link
+            activeClassName="secondary-link"
+            to="/"
+            className="header-link-mobile"
+          >
+            Work
+          </Link>
+          <Link
+            activeClassName="secondary-link"
+            to="../resume"
+            className="header-link-mobile"
+          >
+            Resume
+          </Link>
+          <Link
+            activeClassName="secondary-link"
+            to="../testimonials"
+            className="header-link-mobile"
+          >
+            Testimonials
+          </Link>
+          <Link
+            activeClassName="secondary-link"
+            to="../about"
+            className="header-link-mobile"
+          >
+            About
+          </Link>
         </div>
-      )}
+      </div>
     </header>
   )
 }
