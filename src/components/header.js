@@ -1,11 +1,14 @@
-import * as React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "./layout.css"
+import hamburgerMenu from "../images/hamburgerMenu.png"
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
-    <header style={styles.headerStyle}>
+    <header className="header">
       <div>
         <Link to="/">
           <StaticImage
@@ -16,49 +19,74 @@ function Header() {
         </Link>
       </div>
       <div>
-        <Link activeClassName="secondary-link" to="/" style={styles.linkStyle}>
+        <Link activeClassName="secondary-link" to="/" className="header-link">
           Work
         </Link>
         <Link
           activeClassName="secondary-link"
           to="../resume"
-          style={styles.linkStyle}
+          className="header-link"
         >
           Resume
         </Link>
         <Link
           activeClassName="secondary-link"
           to="../testimonials"
-          style={styles.linkStyle}
+          className="header-link"
         >
           Testimonials
         </Link>
         <Link
           activeClassName="secondary-link"
           to="../about"
-          style={styles.linkStyle}
+          className="header-link"
         >
           About
         </Link>
       </div>
+      <button className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <StaticImage
+          alt="Megan Allen Logo"
+          width={25}
+          src="../images/hamburgerMenu.png"
+        />
+      </button>
+      {isMenuOpen && (
+        <div className="header-links-mobile">
+          <div className="header-links-container-mobile">
+            <Link
+              activeClassName="secondary-link"
+              to="/"
+              className="header-link-mobile"
+            >
+              Work
+            </Link>
+            <Link
+              activeClassName="secondary-link"
+              to="../resume"
+              className="header-link-mobile"
+            >
+              Resume
+            </Link>
+            <Link
+              activeClassName="secondary-link"
+              to="../testimonials"
+              className="header-link-mobile"
+            >
+              Testimonials
+            </Link>
+            <Link
+              activeClassName="secondary-link"
+              to="../about"
+              className="header-link-mobile"
+            >
+              About
+            </Link>
+          </div>
+        </div>
+      )}
     </header>
   )
-}
-
-const styles = {
-  headerStyle: {
-    padding: "var(--space-4) var(--space-5)",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    maxWidth: `var(--size-content)`,
-    margin: `var(--space-5) 0`,
-  },
-
-  linkStyle: {
-    fontSize: "var(--font-lg)",
-    margin: "10px",
-  },
 }
 
 export default Header

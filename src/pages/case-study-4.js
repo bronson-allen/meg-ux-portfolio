@@ -16,6 +16,7 @@ import cs4designSystem2 from "../images/cs4designSystem2.png"
 import cs4finalDesign1 from "../images/cs4finalDesign1.png"
 import cs4finalDesign2 from "../images/cs4finalDesign2.png"
 import cs4productSuccess from "../images/cs4productSuccess.png"
+import cs4ProblemCoupon1 from "../images/cs4ProblemCoupon1.png"
 
 const CaseStudyOne = () => (
   <Layout>
@@ -46,7 +47,7 @@ const CaseStudyOne = () => (
     <hr />
     <div style={styles.row}>
       <div style={styles.column}>
-        <img style={styles.portrait} src={macbookImage2} />
+        <img style={styles.portrait} src={cs4ProblemCoupon1} />
       </div>
       <div style={styles.column}>
         <h2 className="color-primary-dark">PROBLEM</h2>

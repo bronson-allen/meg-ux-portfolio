@@ -43,14 +43,18 @@ const projects = [
 const IndexPage = () => {
   return (
     <Layout>
-      <div style={styles.titleContainer}>
-        <h3 style={{ color: `var(--color-primary)` }}>
-          Hello, I&apos;m Megan!
-        </h3>
-        <p>
-          I am a User Experience Designer, based in Chicago, currently creating
-          digital experiences at Hoverstate.
-        </p>
+      <div style={styles.row}>
+        <div style={styles.column}>
+          <div style={styles.titleContainer}>
+            <h3 style={{ color: `var(--color-primary)` }}>
+              Hello, I&apos;m Megan!
+            </h3>
+            <p>
+              I am a User Experience Designer, based in Chicago, currently
+              creating digital experiences at Hoverstate.
+            </p>
+          </div>
+        </div>
       </div>
       <div>
         <div style={styles.row}>
@@ -93,6 +97,7 @@ const styles = {
   },
 
   column: {
+    padding: ` 0 var(--space-5)`,
     display: "flex",
     flexDirection: "column",
     flexBasis: "100%",

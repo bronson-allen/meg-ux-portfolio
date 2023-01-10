@@ -15,6 +15,12 @@ import cs2DesignSystemColors from "../images/cs2DesignSystemColors.png"
 import cs2DesignSystemText from "../images/cs2DesignSystemText.png"
 import cs2DesignSystemButtons from "../images/cs2DesignSystemButtons.png"
 import cs2DesignSystemComponents from "../images/cs2DesignSystemComponents.png"
+import cs2Wireframe from "../images/cs2Wireframe.png"
+import cs2FinalDesign1 from "../images/cs2FinalDesign1.png"
+import cs2FinalDesign2 from "../images/cs2FinalDesign2.png"
+import cs2SuccessMetric1 from "../images/cs2SuccessMetric1.png"
+import cs2SuccessMetric2 from "../images/cs2SuccessMetric2.png"
+import cs2SuccessMetric3 from "../images/cs2SuccessMetric3.png"
 
 const CaseStudyTwo = () => (
   <Layout>
@@ -193,8 +199,7 @@ const CaseStudyTwo = () => (
         </p>
       </div>
       <div style={styles.column}>
-        <img style={styles.portrait} src={USHELogo} />
-        <p>This needs a real wireframe photo</p>
+        <img style={styles.portrait} src={cs2Wireframe} />
       </div>
     </div>
     <hr />
@@ -288,14 +293,12 @@ const CaseStudyTwo = () => (
         </p>
       </div>
       <div style={styles.column}>
-        <img style={styles.portrait} src={cs2DesignSystemButtons} />
-        <p>needs final design grouped and exported</p>
+        <img style={styles.portrait} src={cs2FinalDesign1} />
       </div>
     </div>
     <div style={styles.row}>
       <div style={styles.column}>
-        <img style={styles.portrait} src={cs2DesignSystemButtons} />
-        <p>needs final design grouped and exported</p>
+        <img style={styles.portrait} src={cs2FinalDesign2} />
       </div>
       <div style={styles.column}>
         <p>
@@ -350,8 +353,41 @@ const CaseStudyTwo = () => (
         </p>
       </div>
       <div style={styles.column}>
-        <img style={styles.portrait} src={cs2DesignSystemButtons} />
-        <p>needs stats image</p>
+        <div style={styles.row}>
+          <img style={styles.portrait} src={cs2SuccessMetric1} />
+        </div>
+        <div style={styles.row}>
+          <img style={styles.portrait} src={cs2SuccessMetric2} />
+        </div>
+      </div>
+    </div>
+    <div style={styles.row}>
+      <div style={styles.column}>
+        <img style={styles.portrait} src={cs2SuccessMetric3} />
+      </div>
+      <div style={styles.column}>
+        <p style={{ fontWeight: "bold" }}>
+          Other things to take into consideration when analyzing the data are:
+        </p>
+        <ul>
+          <li>
+            Did schools/districts tell students to use the app during College
+            Application Week
+          </li>
+          <li>
+            How many users applied for schools via the information from the app,
+            but did not “self-declare” that they applied
+          </li>
+          <li>
+            Did users who used the College Application Week feature already have
+            an active account/familiarity with the app or were they new users
+          </li>
+        </ul>
+        <p>
+          This data along with information from the Keys to Success and Utah
+          System of Higher Education teams helped us decide on a plan to improve
+          the feature before the 2023 College Application Week.
+        </p>
       </div>
     </div>
     <hr />
