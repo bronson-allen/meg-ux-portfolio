@@ -12,9 +12,9 @@ function Header() {
           <h2>Megan Allen</h2>
           <p>User Experience Designer</p>
         </div>
-        <div style={styles.column}>
-          <div className="footer-bar"></div>
-        </div>
+
+        <div className="footer-bar" />
+
         <div style={styles.column}>
           <h2>Connect</h2>
           <div style={styles.iconLinks}>
@@ -53,9 +53,9 @@ function Header() {
             </a>
           </div>
         </div>
-        <div style={styles.column}>
-          <div className="footer-bar"></div>
-        </div>
+
+        <div className="footer-bar"></div>
+
         <div style={styles.column}>
           <h2>
             <a href={resumePDF} download="MeganAllen_Resume">
