@@ -12,8 +12,11 @@ const ResumePage = () => {
       <div style={styles.mainContainer}>
         <div style={styles.titleContainer}>
           <div style={styles.holder}></div>
-          <h1 style={styles.title}>Resume</h1>
+          <h1 className="resume-title" style={styles.title}>
+            Resume
+          </h1>
           <a
+            className="downloadButton"
             style={styles.downloadButton}
             href={resumePDF}
             download="MeganAllen_Resume"
@@ -52,8 +55,6 @@ const styles = {
     margin: `20px 0`,
   },
   title: {
-    alignSelf: "center",
-    justifySelf: "center",
     color: `var(--color-primary-dark)`,
   },
   downloadButton: {

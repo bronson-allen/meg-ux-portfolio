@@ -10,7 +10,7 @@ function Header() {
       <div className="footer-row">
         <div style={styles.column}>
           <h2>Megan Allen</h2>
-          <p>Experience Designer</p>
+          <p>User Experience Designer</p>
         </div>
         <div style={styles.column}>
           <div className="footer-bar"></div>

@@ -32,7 +32,7 @@ html {
   box-sizing: border-box;
   font: sans-serif;
   font-size: var(--font-md);
-  line-height: var(--line-height-normal);
+  line-height: var(--line-height-loose);
   overflow-y: scroll;
 }
 body {
@@ -253,7 +253,7 @@ pre tt:after {
   margin: 0.5em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .column-3 {
     width: 100%;
   }
@@ -283,7 +283,7 @@ pre tt:after {
   padding: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .footer-row {
     flex-direction: column;
     gap: 2.5em;
@@ -347,13 +347,16 @@ pre tt:after {
   transition: transform 0.3s ease-out;
 }
 .header-links-close {
-  font-size: large;
+  font-size: larger;
+  border: none;
+  background: none;
+  color: white;
 }
 .header-link-mobile {
   color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .header {
     display: flex;
   }
@@ -366,4 +369,40 @@ pre tt:after {
     display: block;
     margin-left: 1em;
   }
+}
+
+/* case study styles and Media Queries*/
+
+.row-cs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: var(--space-5);
+}
+
+.column-cs {
+  display: flex;
+  /* gap: var(--space-5); */
+  padding: 0 var(--space-5);
+  flex-direction: column;
+  /* flex-basis: 100%; */
+  flex: 1;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .row-cs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .downloadButton {
+    visibility: hidden;
+  }
+  .resume-title {
+    justify-content: center;
+  }
+}
+
+.image-cs {
+  width: 100%;
 }

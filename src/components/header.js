@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "./layout.css"
-import hamburgerMenu from "../images/hamburgerMenu.png"
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

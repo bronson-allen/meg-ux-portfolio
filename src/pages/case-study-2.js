@@ -24,8 +24,8 @@ import cs2SuccessMetric3 from "../images/cs2SuccessMetric3.png"
 
 const CaseStudyTwo = () => (
   <Layout>
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">PROJECT OVERVIEW</h2>
         <h3>CLIENT</h3>
         <p>Success in Education, Keys to Success Team</p>
@@ -51,16 +51,16 @@ const CaseStudyTwo = () => (
           Education Team
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.portrait} src={iPhoneImage} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <img style={styles.portrait} src={USHELogo} />
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <h2 className="color-primary-dark">PROBLEM</h2>
         <p>
           Keys to Success is an education-based app that helps high school
@@ -86,8 +86,8 @@ const CaseStudyTwo = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">SOLUTION</h2>
         <p>
           Create a checklist of steps that are needed to learn about in-state
@@ -102,13 +102,13 @@ const CaseStudyTwo = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">PROCESS</h2>
         </div>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <h3 className="color-primary-dark">PHASE 1: RESEARCH</h3>
         <p>
           I started the research phase of this project with in-depth research on
@@ -135,18 +135,18 @@ const CaseStudyTwo = () => (
           altered to fit the new experience.)
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.portrait} src={cs2ProcessDiagram} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">PERSONAS</h2>
         </div>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
         <h3 className="color-primary-dark">PERSONA 1</h3>
         <h4>The Power User</h4>
@@ -161,7 +161,7 @@ const CaseStudyTwo = () => (
           applying for colleges.{" "}
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
         <h3 className="color-primary-dark">PERSONA 2</h3>
         <h4>The Browser</h4>
@@ -179,8 +179,8 @@ const CaseStudyTwo = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">WIREFRAMES</h2>
         <p>
           I started with what was already on the application, which was a flow
@@ -198,16 +198,16 @@ const CaseStudyTwo = () => (
           school selection was applicable.{" "}
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.portrait} src={cs2Wireframe} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <img style={styles.portrait} src={cs2DesignChanges} />
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <h2 className="color-primary-dark">DESIGN CHANGES</h2>
         <p>
           As I started working on more in-depth wireframes, I realized the
@@ -231,9 +231,9 @@ const CaseStudyTwo = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">DESIGN SYSTEM</h2>
           <p>
             A Keys to Success design system that included colors, fonts,
@@ -243,26 +243,26 @@ const CaseStudyTwo = () => (
           </p>
         </div>
       </div>
-      <div style={styles.row}>
-        <div style={styles.column}>
+      <div className="row-cs">
+        <div className="column-cs">
           <img style={styles.portrait} src={cs2DesignSystemColors} />
         </div>
-        <div style={styles.column}>
+        <div className="column-cs">
           <img style={styles.portrait} src={cs2DesignSystemText} />
         </div>
       </div>
-      <div style={styles.row}>
-        <div style={styles.column}>
+      <div className="row-cs">
+        <div className="column-cs">
           <img style={styles.portrait} src={cs2DesignSystemButtons} />
         </div>
-        <div style={styles.column}>
+        <div className="column-cs">
           <img style={styles.portrait} src={cs2DesignSystemComponents} />
         </div>
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">FINAL DESIGN</h2>
         <p>
           The final design was an in-depth feature that helped connect the app’s
@@ -292,15 +292,15 @@ const CaseStudyTwo = () => (
           also able to see the distance to a school based on their zip code.
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.portrait} src={cs2FinalDesign1} />
       </div>
     </div>
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <img style={styles.portrait} src={cs2FinalDesign2} />
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <p>
           The feature got a well earned access point on the home screen of the
           app and at the time it was finished, the goal was that it will
@@ -329,8 +329,8 @@ const CaseStudyTwo = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">PRODUCT SUCCESSES</h2>
         <p>
           The team was able to get this feature out in a very short time. The
@@ -352,20 +352,20 @@ const CaseStudyTwo = () => (
           this effort.
         </p>
       </div>
-      <div style={styles.column}>
-        <div style={styles.row}>
+      <div className="column-cs">
+        <div className="row-cs">
           <img style={styles.portrait} src={cs2SuccessMetric1} />
         </div>
-        <div style={styles.row}>
+        <div className="row-cs">
           <img style={styles.portrait} src={cs2SuccessMetric2} />
         </div>
       </div>
     </div>
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <img style={styles.portrait} src={cs2SuccessMetric3} />
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <p style={{ fontWeight: "bold" }}>
           Other things to take into consideration when analyzing the data are:
         </p>
@@ -391,8 +391,8 @@ const CaseStudyTwo = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">WHAT I LEARNED</h2>
         <p>
           During this project I learned how to take a stressful and very large

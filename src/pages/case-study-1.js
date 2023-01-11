@@ -19,8 +19,8 @@ import cs1ProductSuccess from "../images/cs1ProductSuccess.png"
 
 const CaseStudyOne = () => (
   <Layout>
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">PROJECT OVERVIEW</h2>
         <h3>CLIENT</h3>
         <p>Success in Education, Keys to Success Team</p>
@@ -40,16 +40,16 @@ const CaseStudyOne = () => (
           Program Manager from Keys to Success team
         </p>
       </div>
-      <div style={styles.column}>
-        <img style={styles.portrait} src={macbookImage1} />
+      <div className="column-cs">
+        <img className="image-cs" src={macbookImage1} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
-        <img style={styles.portrait} src={usersTable} />
+    <div className="row-cs">
+      <div className="column-cs">
+        <img className="image-cs" src={usersTable} />
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <h2 className="color-primary-dark">PROBLEM</h2>
         <p>
           Keys to Success is an education-based app that helps high school
@@ -72,8 +72,8 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">SOLUTION</h2>
         <p>
           Turn the first screen seen on application into a control center with a
@@ -84,18 +84,18 @@ const CaseStudyOne = () => (
           new navigation and dashboard as a starting point.
         </p>
       </div>
-      <div style={styles.column}>
-        <img style={styles.portrait} src={cs1FeaturesChart} />
+      <div className="column-cs">
+        <img className="image-cs" src={cs1FeaturesChart} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">PROCESS</h2>
         </div>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <h3 className="color-primary-dark">PHASE 1</h3>
         <p>
           When I started on the project, the application had outdated UI and was
@@ -114,7 +114,7 @@ const CaseStudyOne = () => (
           didn’t have access to.
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <h3 className="color-primary-dark">PHASE 2</h3>
         <p>
           The next year, the client was convinced that a UI refresh was
@@ -134,13 +134,13 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">PERSONAS</h2>
         </div>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
         <h3 className="color-primary-dark">PERSONA 1</h3>
         <h4>Keys to Success Super Admin User</h4>
@@ -151,7 +151,7 @@ const CaseStudyOne = () => (
           There are &lt;10 users with this type of access.{" "}
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
         <h3 className="color-primary-dark">PERSONA 2</h3>
         <h4>District Admins</h4>
@@ -164,7 +164,7 @@ const CaseStudyOne = () => (
           internships and other opportunities to the student app.{" "}
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
         <h3 className="color-primary-dark">PERSONA 3</h3>
         <h4>School Admins</h4>
@@ -178,8 +178,8 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">ROUND 1 MOCKUPS</h2>
         <p>
           The first version of this dashboard was the homepage using the old
@@ -201,16 +201,16 @@ const CaseStudyOne = () => (
           applications, quick links, and quick exports.
         </p>
       </div>
-      <div style={styles.column}>
-        <img style={styles.portrait} src={cs1WelcomeToKTS} />
+      <div className="column-cs">
+        <img className="image-cs" src={cs1WelcomeToKTS} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
-        <img style={styles.portrait} src={cs1DesignChanges} />
+    <div className="row-cs">
+      <div className="column-cs">
+        <img className="image-cs" src={cs1DesignChanges} />
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <h2 className="color-primary-dark">DESIGN CHANGES</h2>
         <p>
           When the budget for the app UI refresh was approved, I had a great
@@ -227,9 +227,9 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">DESIGN SYSTEM</h2>
           <p>
             I created a simple design system that included colors, typography,
@@ -244,22 +244,22 @@ const CaseStudyOne = () => (
           </p>
         </div>
       </div>
-      <div style={styles.row}>
-        <div style={styles.column}>
-          <img style={styles.portrait} src={cs1DesignSystemColors} />
+      <div className="row-cs">
+        <div className="column-cs">
+          <img className="image-cs" src={cs1DesignSystemColors} />
         </div>
-        <div style={styles.column}>
-          <img style={styles.portrait} src={cs1DesignSystemStyles} />
+        <div className="column-cs">
+          <img className="image-cs" src={cs1DesignSystemStyles} />
         </div>
-        <div style={styles.column}>
-          <img style={styles.portrait} src={cs1DesignSystemComponents} />
+        <div className="column-cs">
+          <img className="image-cs" src={cs1DesignSystemComponents} />
         </div>
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">FINAL DESIGN</h2>
           <p>
             The final design enhanced the experience of what had already been
@@ -276,15 +276,15 @@ const CaseStudyOne = () => (
           </p>
         </div>
       </div>
-      <div style={styles.row}>
-        <div style={styles.column}>
-          <img style={styles.portrait} src={cs1FinalDesign} />
+      <div className="row-cs">
+        <div className="column-cs">
+          <img className="image-cs" src={cs1FinalDesign} />
         </div>
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">PRODUCT SUCCESSES</h2>
         <p>
           The client was so excited for the dashboard feature to exist on the
@@ -300,13 +300,13 @@ const CaseStudyOne = () => (
           other users of the application.
         </p>
       </div>
-      <div style={styles.column}>
-        <img style={styles.portrait} src={cs1ProductSuccess} />
+      <div className="column-cs">
+        <img className="image-cs" src={cs1ProductSuccess} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">WHAT I LEARNED</h2>
         <p>
           Having the opportunity to create a solution to the problem and then,

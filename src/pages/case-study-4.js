@@ -20,8 +20,8 @@ import cs4ProblemCoupon1 from "../images/cs4ProblemCoupon1.png"
 
 const CaseStudyOne = () => (
   <Layout>
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">PROJECT OVERVIEW</h2>
         <h3>CLIENT</h3>
         <p>Success in Education</p>
@@ -40,16 +40,16 @@ const CaseStudyOne = () => (
           Program Manager from Success in Education team
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.portrait} src={macbookImage2} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <img style={styles.portrait} src={cs4ProblemCoupon1} />
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <h2 className="color-primary-dark">PROBLEM</h2>
         <p>
           Success in Education is a company that provides education based
@@ -66,8 +66,8 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">SOLUTION</h2>
         <p>
           Creating a digital desktop and mobile experience for teachers to log
@@ -81,9 +81,9 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">PROCESS</h2>
           <p>
             First, I decided on the overall structure of the site. Once this was
@@ -101,23 +101,23 @@ const CaseStudyOne = () => (
           </p>
         </div>
       </div>
-      <div style={styles.row}>
-        <div style={styles.column}>
+      <div className="row-cs">
+        <div className="column-cs">
           <img style={styles.portrait} src={cs4processDiagram1} />
         </div>
-        <div style={styles.column}>
+        <div className="column-cs">
           <img style={styles.portrait} src={cs4processDiagram2} />
         </div>
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">PERSONAS</h2>
         </div>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
         <h3 className="color-primary-dark">PERSONA 1</h3>
         <h4>Success in Education Participant - On Mobile</h4>
@@ -129,7 +129,7 @@ const CaseStudyOne = () => (
           phone.
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
         <h3 className="color-primary-dark">PERSONA 2</h3>
         <h4>Success in Education Participant - On Desktop</h4>
@@ -142,8 +142,8 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">WIREFRAMES</h2>
         <p>
           The wireframes were created and prototyped to ensure a positive
@@ -156,16 +156,16 @@ const CaseStudyOne = () => (
           shown to the client before moving onto the next steps.
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.wireframeMobile} src={cs4WireframeMobile} />
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.portrait} src={cs4WireframeDesktop} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">DESIGN CHANGES</h2>
         <p>
           After reviewing the wireframes with the client, we got more
@@ -185,9 +185,9 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">DESIGN SYSTEM</h2>
           <p>
             New brand colors and fonts had just been approved for the Success in
@@ -197,19 +197,19 @@ const CaseStudyOne = () => (
           </p>
         </div>
       </div>
-      <div style={styles.row}>
-        <div style={styles.column}>
+      <div className="row-cs">
+        <div className="column-cs">
           <img style={styles.portrait} src={cs4designSystem1} />
         </div>
-        <div style={styles.column}>
+        <div className="column-cs">
           <img style={styles.portrait} src={cs4designSystem2} />
         </div>
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">FINAL DESIGN</h2>
           <p>
             The final design gave users a streamlined process that can be access
@@ -224,15 +224,15 @@ const CaseStudyOne = () => (
             refreshed.
           </p>
         </div>
-        <div style={styles.column}>
+        <div className="column-cs">
           <img style={styles.imgWide} src={cs4finalDesign1} />
         </div>
       </div>
-      <div style={styles.row}>
-        <div style={styles.column}>
+      <div className="row-cs">
+        <div className="column-cs">
           <img style={styles.imgWide} src={cs4finalDesign2} />
         </div>
-        <div style={styles.column}>
+        <div className="column-cs">
           <p>
             The coupons page of this website is where most actionable items take
             place. All available coupons for the year are seen here. I designed
@@ -250,8 +250,8 @@ const CaseStudyOne = () => (
           </p>
         </div>
       </div>
-      <div style={styles.row}>
-        <div style={styles.column}>
+      <div className="row-cs">
+        <div className="column-cs">
           <p>
             There are two different ways to redeem coupons based on what the
             sponsoring companies are able to provide to the Keys to Success
@@ -268,14 +268,14 @@ const CaseStudyOne = () => (
             the desktop view.
           </p>
         </div>
-        <div style={styles.column}>
+        <div className="column-cs">
           <img style={styles.imgWide} src={cs4finalDesign2} />
         </div>
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">DESIGN SYSTEM</h2>
         <p>
           The client was thrilled to be able to send an email to participating
@@ -290,13 +290,13 @@ const CaseStudyOne = () => (
           of the updates on their end.
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.imgWide} src={cs4productSuccess} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">WHAT I LEARNED</h2>
         <p>
           During this project I learned the importance of designing mobile first

@@ -23,8 +23,8 @@ import MyVideoComponent from "../components/MyVideoComponent"
 
 const CaseStudyThree = () => (
   <Layout>
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">PROJECT OVERVIEW</h2>
         <h3>CLIENT</h3>
         <p>Kornerstone Administrative Services, Ken Garff Automotive Group</p>
@@ -58,13 +58,13 @@ const CaseStudyThree = () => (
           various levels on the Kornerstone team.
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.portrait} src={macImage} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">PROBLEM</h2>
         <p>
           The current screen flow for this procedure was found to have some
@@ -81,17 +81,17 @@ const CaseStudyThree = () => (
         </p>
       </div>
     </div>
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <img style={styles.portrait} src={cs3ProblemImage1} />
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.portrait} src={cs3ProblemImage2} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">SOLUTION</h2>
         <p>
           Move products from an experience in the dealership flow to its own
@@ -104,8 +104,8 @@ const CaseStudyThree = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">WHAT IS PEGA?</h2>
         <p>
           PEGA is a low-code app development platform that offers existing
@@ -121,14 +121,14 @@ const CaseStudyThree = () => (
           experience for the users in some scenarios.{" "}
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.portrait} src={pegaImage} />
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">PROCESS</h2>
           <h3 className="color-primary-dark">
             PHASE 1: Undertanding the old design
@@ -150,18 +150,18 @@ const CaseStudyThree = () => (
           </p>
         </div>
       </div>
-      <div style={styles.row}>
-        <div style={styles.column}>
-          <div style={styles.row}>
-            <div style={styles.column}>
+      <div className="row-cs">
+        <div className="column-cs">
+          <div className="row-cs">
+            <div className="column-cs">
               <img style={styles.portrait} src={cs3ProcessImage1} />
             </div>
-            <div style={styles.column}>
+            <div className="column-cs">
               <img style={styles.portrait} src={cs3ProcessImage2} />
             </div>
           </div>
-          <div style={styles.row}>
-            <div style={styles.column}>
+          <div className="row-cs">
+            <div className="column-cs">
               <h3 className="color-primary-dark">
                 PHASE 2: Generate the new design{" "}
               </h3>
@@ -178,19 +178,19 @@ const CaseStudyThree = () => (
             </div>
           </div>
         </div>
-        <div style={styles.column}>
+        <div className="column-cs">
           <img style={styles.portrait} src={cs3ProcessImage3} />
         </div>
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.row}>
-        <div style={styles.column}>
+    <div className="row-cs">
+      <div className="row-cs">
+        <div className="column-cs">
           <h2 className="color-primary-dark">PERSONAS</h2>
         </div>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
         <h3 className="color-primary-dark">PERSONA 1</h3>
         <h4>Kornerstone Admin</h4>
@@ -205,7 +205,7 @@ const CaseStudyThree = () => (
           20 of these users.
         </p>
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
         <h3 className="color-primary-dark">PERSONA 2</h3>
         <h4>Dealership Owner Admin</h4>
@@ -220,8 +220,8 @@ const CaseStudyThree = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">WIREFRAMES</h2>
         <p>
           The first round of wireframes was similar to the original process that
@@ -243,20 +243,20 @@ const CaseStudyThree = () => (
           product category very often, but it was now available for when needed.{" "}
         </p>
       </div>
-      <div style={styles.column}>
-        <div style={styles.row}>
-          <div style={styles.column}>
+      <div className="column-cs">
+        <div className="row-cs">
+          <div className="column-cs">
             <img style={styles.portrait} src={cs3Wireframe1} />
           </div>
-          <div style={styles.column}>
+          <div className="column-cs">
             <img style={styles.portrait} src={cs3Wireframe2} />
           </div>
         </div>
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">USABILITY TESTING</h2>
         <p>
           This specific feature of the product was built with the intention of
@@ -278,8 +278,8 @@ const CaseStudyThree = () => (
         </p>
       </div>
     </div>
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h3 className="color-primary-dark">PAIN POINTS</h3>
         <p>
           I had been working with the user we tested with for over a year and at
@@ -291,15 +291,15 @@ const CaseStudyThree = () => (
         </p>
       </div>
     </div>
-    <div style={styles.row}>
+    <div className="row-cs">
       <img style={styles.portrait} src={cs3UsabilityTesting} />
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <img style={styles.portrait} src={cs3DesignChanges} />
       </div>
-      <div style={styles.column}>
+      <div className="column-cs">
         <h2 className="color-primary-dark">DESIGN CHANGES</h2>
         <p>
           I moved the wireframes over to the digital side and was able to pull
@@ -318,8 +318,8 @@ const CaseStudyThree = () => (
       </div>
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">FINAL DESIGN</h2>
         <p>
           The last round of the designs eventually turned into the final design
@@ -337,12 +337,12 @@ const CaseStudyThree = () => (
         </p>
       </div>
     </div>
-    <div style={styles.row}>
+    <div className="row-cs">
       <MyVideoComponent />
     </div>
     <hr />
-    <div style={styles.row}>
-      <div style={styles.column}>
+    <div className="row-cs">
+      <div className="column-cs">
         <h2 className="color-primary-dark">WHAT I LEARNED</h2>
         <p>
           Band-Aid fixes just don’t always cut it. I was involved in this
