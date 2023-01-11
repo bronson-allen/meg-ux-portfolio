@@ -10,6 +10,7 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
+  --font-xlg: 20px;
   --font-lg: 18px;
   --font-md: 16px;
   --font-sm: 14px;
@@ -80,6 +81,11 @@ h3 {
   padding: 0;
   line-height: var(--line-height-dense);
   letter-spacing: -0.01em;
+}
+h4{
+  font-weight: 700;
+  font-size: var(--font-xlg);
+  margin: var(--space-1) 0;
 }
 h1 > b {
   color: var(--color-primary);
@@ -243,6 +249,10 @@ pre tt:after {
   font-style: italic;
 }
 
+.bolded {
+  font-weight: bold;
+}
+
 .textButton:hover {
   cursor: pointer;
 }
@@ -378,6 +388,11 @@ pre tt:after {
   flex-wrap: wrap;
   width: 100%;
   gap: var(--space-5);
+  margin: var(--space-3) 0;
+}
+
+.align-start {
+  align-items: flex-start;
 }
 
 .column-cs {
@@ -390,10 +405,21 @@ pre tt:after {
   justify-content: center;
 }
 
+.title-cs {
+  margin-bottom: var(--space-6);
+  align-items: flex-start;
+}
+
 @media (max-width: 800px) {
   .row-cs {
     flex-direction: column;
+    /* align-items: center; */
+  }
+  .centered {
     align-items: center;
+  }
+  .reverse {
+    flex-direction: column-reverse;
   }
   .downloadButton {
     visibility: hidden;

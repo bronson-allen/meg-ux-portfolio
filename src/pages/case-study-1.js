@@ -19,7 +19,13 @@ import cs1ProductSuccess from "../images/cs1ProductSuccess.png"
 
 const CaseStudyOne = () => (
   <Layout>
-    <div className="row-cs">
+    <div className="row-cs title-cs">
+      <div className="column-cs">
+        <h1 className="secondary-color">ADMIN USER DASHBOARD</h1>
+        <h4>Keys to Success, Success in Education</h4>
+      </div>
+    </div>
+    <div className="row-cs reverse">
       <div className="column-cs">
         <h2 className="color-primary-dark">PROJECT OVERVIEW</h2>
         <h3>CLIENT</h3>
@@ -89,14 +95,14 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div className="row-cs">
       <div className="row-cs">
         <div className="column-cs">
           <h2 className="color-primary-dark">PROCESS</h2>
         </div>
       </div>
+    <div className="row-cs align-start">
       <div className="column-cs">
-        <h3 className="color-primary-dark">PHASE 1</h3>
+        <h3>PHASE 1</h3>
         <p>
           When I started on the project, the application had outdated UI and was
           functioning like a typical website instead of a place where
@@ -115,7 +121,7 @@ const CaseStudyOne = () => (
         </p>
       </div>
       <div className="column-cs">
-        <h3 className="color-primary-dark">PHASE 2</h3>
+        <h3>PHASE 2</h3>
         <p>
           The next year, the client was convinced that a UI refresh was
           desparately needed. I was able to take what I had made on the
@@ -134,16 +140,16 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div className="row-cs">
       <div className="row-cs">
         <div className="column-cs">
           <h2 className="color-primary-dark">PERSONAS</h2>
         </div>
       </div>
+    <div className="row-cs align-start">
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
-        <h3 className="color-primary-dark">PERSONA 1</h3>
-        <h4>Keys to Success Super Admin User</h4>
+        <h3>PERSONA 1</h3>
+        <h4 className="secondary-color">Keys to Success Super Admin User</h4>
         <p>
           A type of admin for the Keys to Success student mobile app. User has
           access to ALL admin features. They approve actions taken by users of
@@ -153,8 +159,8 @@ const CaseStudyOne = () => (
       </div>
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
-        <h3 className="color-primary-dark">PERSONA 2</h3>
-        <h4>District Admins</h4>
+        <h3>PERSONA 2</h3>
+        <h4 className="secondary-color">District Admins</h4>
         <p>
           A type of admin for the Keys to Success student mobile app. They have
           access to limited features that are chosen by the super admin based on
@@ -166,8 +172,8 @@ const CaseStudyOne = () => (
       </div>
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
-        <h3 className="color-primary-dark">PERSONA 3</h3>
-        <h4>School Admins</h4>
+        <h3>PERSONA 3</h3>
+        <h4 className="secondary-color">School Admins</h4>
         <p>
           A type of admin for the Keys to Success student mobile app. Users have
           access to limited features that are chosen by the super admin based on

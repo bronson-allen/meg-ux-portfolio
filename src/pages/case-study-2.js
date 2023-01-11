@@ -24,7 +24,13 @@ import cs2SuccessMetric3 from "../images/cs2SuccessMetric3.png"
 
 const CaseStudyTwo = () => (
   <Layout>
-    <div className="row-cs">
+    <div className="row-cs title-cs">
+      <div className="column-cs">
+        <h1 className="secondary-color">COLLEGE APPLICATION CHECKLIST</h1>
+        <h4>Keys to Success, Success in Education</h4>
+      </div>
+    </div>
+    <div className="row-cs reverse centered">
       <div className="column-cs">
         <h2 className="color-primary-dark">PROJECT OVERVIEW</h2>
         <h3>CLIENT</h3>
@@ -103,13 +109,9 @@ const CaseStudyTwo = () => (
     </div>
     <hr />
     <div className="row-cs">
-      <div className="row-cs">
-        <div className="column-cs">
-          <h2 className="color-primary-dark">PROCESS</h2>
-        </div>
-      </div>
       <div className="column-cs">
-        <h3 className="color-primary-dark">PHASE 1: RESEARCH</h3>
+          <h2 className="color-primary-dark">PROCESS</h2>
+        <h3>PHASE 1: RESEARCH</h3>
         <p>
           I started the research phase of this project with in-depth research on
           user experience and user interface on lists, tasks, and progress
@@ -122,7 +124,7 @@ const CaseStudyTwo = () => (
           checklist items we would need to include.
         </p>
         {"\n"}
-        <h3 className="color-primary-dark">
+        <h3>
           PHASE 2: RECYCLING THE CURRENT FEATURE
         </h3>
         <p>
@@ -140,16 +142,16 @@ const CaseStudyTwo = () => (
       </div>
     </div>
     <hr />
-    <div className="row-cs">
       <div className="row-cs">
         <div className="column-cs">
           <h2 className="color-primary-dark">PERSONAS</h2>
         </div>
       </div>
+    <div className="row-cs align-start">
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
-        <h3 className="color-primary-dark">PERSONA 1</h3>
-        <h4>The Power User</h4>
+        <h3>PERSONA 1</h3>
+        <h4 className="secondary-color">The Power User</h4>
         <p>
           A 12th grade student (in their last year of high school) who is a new
           or current user of the application. User is interested in trade
@@ -163,8 +165,8 @@ const CaseStudyTwo = () => (
       </div>
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
-        <h3 className="color-primary-dark">PERSONA 2</h3>
-        <h4>The Browser</h4>
+        <h3>PERSONA 2</h3>
+        <h4 className="secondary-color">The Browser</h4>
         <p>
           A 12th grade student (in their last year of high school) who is a new
           or current user of the application. This user learns about the feature

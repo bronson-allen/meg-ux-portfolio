@@ -24,7 +24,9 @@ import * as React from 'react'
     display: 'flex',
      color: `var(--color-secondary)`,
      justifyContent: 'center',
-     alignItems: 'center'
+     alignItems: 'center',
+     fontWeight: 'bold',
+     fontSize: `var(--font-xlg)`
    },
 
    icon: {

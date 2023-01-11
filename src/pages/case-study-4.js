@@ -20,7 +20,13 @@ import cs4ProblemCoupon1 from "../images/cs4ProblemCoupon1.png"
 
 const CaseStudyOne = () => (
   <Layout>
-    <div className="row-cs">
+    <div className="row-cs title-cs">
+      <div className="column-cs">
+        <h1 className="secondary-color">DIGITIZED COUPON BOOK</h1>
+        <h4>Success in Education</h4>
+      </div>
+    </div>
+    <div className="row-cs reverse">
       <div className="column-cs">
         <h2 className="color-primary-dark">PROJECT OVERVIEW</h2>
         <h3>CLIENT</h3>
@@ -111,16 +117,16 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-    <div className="row-cs">
       <div className="row-cs">
         <div className="column-cs">
           <h2 className="color-primary-dark">PERSONAS</h2>
         </div>
       </div>
+    <div className="row-cs align-start">
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
-        <h3 className="color-primary-dark">PERSONA 1</h3>
-        <h4>Success in Education Participant - On Mobile</h4>
+        <h3>PERSONA 1</h3>
+        <h4 className="secondary-color">Success in Education Participant - On Mobile</h4>
         <p>
           A teacher or staff member who works with one or more of the Success in
           Education programs at their school. They recieve coupons (that are
@@ -131,8 +137,8 @@ const CaseStudyOne = () => (
       </div>
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
-        <h3 className="color-primary-dark">PERSONA 2</h3>
-        <h4>Success in Education Participant - On Desktop</h4>
+        <h3>PERSONA 2</h3>
+        <h4 className="secondary-color">Success in Education Participant - On Desktop</h4>
         <p>
           A teacher or staff member who works with one or more of the Success in
           Education programs at their school. They recieve coupons (that are
@@ -155,9 +161,6 @@ const CaseStudyOne = () => (
           screens to work on based on the requirements. The wireframes were
           shown to the client before moving onto the next steps.
         </p>
-      </div>
-      <div className="column-cs">
-        <img style={styles.wireframeMobile} src={cs4WireframeMobile} />
       </div>
       <div className="column-cs">
         <img style={styles.portrait} src={cs4WireframeDesktop} />
@@ -360,6 +363,6 @@ const styles = {
   },
 }
 
-export const Head = () => <Seo title="Case Study 1" />
+export const Head = () => <Seo title="Case Study 4" />
 
 export default CaseStudyOne

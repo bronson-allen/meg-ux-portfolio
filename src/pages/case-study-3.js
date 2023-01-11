@@ -23,7 +23,13 @@ import MyVideoComponent from "../components/MyVideoComponent"
 
 const CaseStudyThree = () => (
   <Layout>
-    <div className="row-cs">
+    <div className="row-cs title-cs">
+      <div className="column-cs">
+        <h1 className="secondary-color">GLOBAL & DEALERSHIP PRODUCT CREATION</h1>
+        <h4>Kornerstone  Administrative Services, Ken Garff  Automotive Group</h4>
+      </div>
+    </div>
+    <div className="row-cs reverse">
       <div className="column-cs">
         <h2 className="color-primary-dark">PROJECT OVERVIEW</h2>
         <h3>CLIENT</h3>
@@ -130,7 +136,7 @@ const CaseStudyThree = () => (
       <div className="row-cs">
         <div className="column-cs">
           <h2 className="color-primary-dark">PROCESS</h2>
-          <h3 className="color-primary-dark">
+          <h3>
             PHASE 1: Undertanding the old design
           </h3>
           <p>
@@ -149,20 +155,13 @@ const CaseStudyThree = () => (
             enough evidence to persuade them.
           </p>
         </div>
+        <div className="column-cs">
+          <img style={styles.portrait} src={cs3ProcessImage3} />
+        </div>
       </div>
       <div className="row-cs">
-        <div className="column-cs">
-          <div className="row-cs">
             <div className="column-cs">
-              <img style={styles.portrait} src={cs3ProcessImage1} />
-            </div>
-            <div className="column-cs">
-              <img style={styles.portrait} src={cs3ProcessImage2} />
-            </div>
-          </div>
-          <div className="row-cs">
-            <div className="column-cs">
-              <h3 className="color-primary-dark">
+              <h3>
                 PHASE 2: Generate the new design{" "}
               </h3>
               <p>
@@ -177,23 +176,28 @@ const CaseStudyThree = () => (
               </p>
             </div>
           </div>
+      <div className="row-cs">
+        <div className="column-cs">
+            <div className="column-cs">
+              <img style={styles.portrait} src={cs3ProcessImage1} />
+            </div>
         </div>
         <div className="column-cs">
-          <img style={styles.portrait} src={cs3ProcessImage3} />
+          <img style={styles.portrait} src={cs3ProcessImage2} />
         </div>
       </div>
     </div>
     <hr />
-    <div className="row-cs">
       <div className="row-cs">
         <div className="column-cs">
           <h2 className="color-primary-dark">PERSONAS</h2>
         </div>
       </div>
+    <div className="row-cs align-start">
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
-        <h3 className="color-primary-dark">PERSONA 1</h3>
-        <h4>Kornerstone Admin</h4>
+        <h3>PERSONA 1</h3>
+        <h4 className="secondary-color">Kornerstone Admin</h4>
         <p>
           An employee at the Kornerstone company who is a type of admin that has
           access to ALL features on the application. They have the power to
@@ -207,8 +211,8 @@ const CaseStudyThree = () => (
       </div>
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
-        <h3 className="color-primary-dark">PERSONA 2</h3>
-        <h4>Dealership Owner Admin</h4>
+        <h3>PERSONA 2</h3>
+        <h4 className="secondary-color">Dealership Owner Admin</h4>
         <p>
           An employee at the Kornerstone company who is a type of admin at the
           dealership level who has the highest access for that specific
@@ -280,7 +284,7 @@ const CaseStudyThree = () => (
     </div>
     <div className="row-cs">
       <div className="column-cs">
-        <h3 className="color-primary-dark">PAIN POINTS</h3>
+        <h3>PAIN POINTS</h3>
         <p>
           I had been working with the user we tested with for over a year and at
           this point had learned that their resistance to change was intense.
@@ -401,6 +405,6 @@ const styles = {
   },
 }
 
-export const Head = () => <Seo title="Case study 3" />
+export const Head = () => <Seo title="Case Study 3" />
 
 export default CaseStudyThree

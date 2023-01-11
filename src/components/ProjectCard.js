@@ -17,7 +17,7 @@ const ProjectCard = ({ title, name, imgSrc, url, text }) => {
       <h3>{title}</h3>
       <h2 style={styles.name}>{name}</h2>
       <p>{text}</p>
-      <Link to={url} className={"secondary-color"} style={styles.link}>
+      <Link to={url} className={"secondary-color bolded"} style={styles.link}>
         <p>Full Case Study</p>
         <img width={20} src={arrowIcon} style={styles.icon} />
       </Link>
