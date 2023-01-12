@@ -9,7 +9,9 @@ function Header() {
     <footer className="footer">
       <div className="footer-row">
         <div style={styles.column}>
-          <h2>Megan Allen</h2>
+          <Link to="/" className="footer-link">
+            <h2>Megan Allen</h2>
+          </Link>
           <p>User Experience Designer</p>
         </div>
 

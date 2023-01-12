@@ -12,7 +12,7 @@ function Header() {
         <Link to="/">
           <StaticImage
             alt="Megan Allen Logo"
-            width={250}
+            width={294}
             src="../images/MeganAllen.png"
           />
         </Link>
@@ -45,8 +45,8 @@ function Header() {
       </div>
       <button className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <StaticImage
-          alt="Megan Allen Logo"
-          width={25}
+          alt="Hamburger Menu"
+          width={26}
           src="../images/hamburgerMenu.png"
         />
       </button>

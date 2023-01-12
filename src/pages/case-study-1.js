@@ -16,7 +16,10 @@ import cs1DesignSystemStyles from "../images/cs1DesignSystemStyles.png"
 import cs1DesignSystemComponents from "../images/cs1DesignSystemComponents.png"
 import cs1FinalDesign from "../images/cs1FinalDesign.png"
 import cs1ProductSuccess from "../images/cs1ProductSuccess.png"
-
+import cs1Learned1 from "../images/cs1Learned1.png"
+import cs1Learned2 from "../images/cs1Learned2.png"
+import cs1Learned3 from "../images/cs1Learned3.png"
+cs1Learned1
 const CaseStudyOne = () => (
   <Layout>
     <div className="row-cs title-cs">
@@ -95,11 +98,11 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-      <div className="row-cs">
-        <div className="column-cs">
-          <h2 className="color-primary-dark">PROCESS</h2>
-        </div>
+    <div className="row-cs">
+      <div className="column-cs">
+        <h2 className="color-primary-dark">PROCESS</h2>
       </div>
+    </div>
     <div className="row-cs align-start">
       <div className="column-cs">
         <h3>PHASE 1</h3>
@@ -140,11 +143,11 @@ const CaseStudyOne = () => (
       </div>
     </div>
     <hr />
-      <div className="row-cs">
-        <div className="column-cs">
-          <h2 className="color-primary-dark">PERSONAS</h2>
-        </div>
+    <div className="row-cs">
+      <div className="column-cs">
+        <h2 className="color-primary-dark">PERSONAS</h2>
       </div>
+    </div>
     <div className="row-cs align-start">
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
@@ -284,7 +287,7 @@ const CaseStudyOne = () => (
       </div>
       <div className="row-cs">
         <div className="column-cs">
-          <img className="image-cs" src={cs1FinalDesign} />
+          <img className="image-cs resize-lg" src={cs1FinalDesign} />
         </div>
       </div>
     </div>
@@ -306,8 +309,8 @@ const CaseStudyOne = () => (
           other users of the application.
         </p>
       </div>
-      <div className="column-cs">
-        <img className="image-cs" src={cs1ProductSuccess} />
+      <div className="column-cs ">
+        <img className="image-cs resize-lg" src={cs1ProductSuccess} />
       </div>
     </div>
     <hr />
@@ -329,6 +332,17 @@ const CaseStudyOne = () => (
           overall look and feel of the site was more modern and less
           restrictive.{" "}
         </p>
+      </div>
+    </div>
+    <div className="row-cs align-start">
+      <div className="column-cs">
+        <img className="image-cs" src={cs1Learned1} />
+      </div>
+      <div className="column-cs">
+        <img className="image-cs" src={cs1Learned2} />
+      </div>
+      <div className="column-cs">
+        <img className="image-cs" src={cs1Learned3} />
       </div>
     </div>
     <ScrollToTop showBelow={250} />

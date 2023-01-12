@@ -71,10 +71,7 @@ const styles = {
   },
   row: {
     display: "flex",
-    flexDirection: "row",
     flexWrap: "wrap",
-    width: "100%",
-    margin: "2em 0",
   },
   // column: {
   //   flex: 1,
@@ -85,7 +82,7 @@ const styles = {
     justifyContent: "space-between",
     width: "90%",
     margin: `0 auto`,
-    minHeight: "878px",
+    minHeight: "100%",
     boxShadow: `0px 8px 20px 10px rgba(143, 143, 143, 0.25)`,
     padding: `var(--space-5)`,
   },

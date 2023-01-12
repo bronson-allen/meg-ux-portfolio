@@ -58,13 +58,13 @@ const CaseStudyTwo = () => (
         </p>
       </div>
       <div className="column-cs">
-        <img style={styles.portrait} src={iPhoneImage} />
+        <img className="resize-md" src={iPhoneImage} />
       </div>
     </div>
     <hr />
     <div className="row-cs">
       <div className="column-cs">
-        <img style={styles.portrait} src={USHELogo} />
+        <img className="resize-md" src={USHELogo} />
       </div>
       <div className="column-cs">
         <h2 className="color-primary-dark">PROBLEM</h2>
@@ -110,7 +110,7 @@ const CaseStudyTwo = () => (
     <hr />
     <div className="row-cs">
       <div className="column-cs">
-          <h2 className="color-primary-dark">PROCESS</h2>
+        <h2 className="color-primary-dark">PROCESS</h2>
         <h3>PHASE 1: RESEARCH</h3>
         <p>
           I started the research phase of this project with in-depth research on
@@ -124,9 +124,7 @@ const CaseStudyTwo = () => (
           checklist items we would need to include.
         </p>
         {"\n"}
-        <h3>
-          PHASE 2: RECYCLING THE CURRENT FEATURE
-        </h3>
+        <h3>PHASE 2: RECYCLING THE CURRENT FEATURE</h3>
         <p>
           Before diving into the wireframes and high fidelity designs I did an
           in-depth inventory on what the feature currently provided. The client
@@ -142,11 +140,11 @@ const CaseStudyTwo = () => (
       </div>
     </div>
     <hr />
-      <div className="row-cs">
-        <div className="column-cs">
-          <h2 className="color-primary-dark">PERSONAS</h2>
-        </div>
+    <div className="row-cs">
+      <div className="column-cs">
+        <h2 className="color-primary-dark">PERSONAS</h2>
       </div>
+    </div>
     <div className="row-cs align-start">
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
@@ -245,7 +243,7 @@ const CaseStudyTwo = () => (
           </p>
         </div>
       </div>
-      <div className="row-cs">
+      <div className="row-cs align-start">
         <div className="column-cs">
           <img style={styles.portrait} src={cs2DesignSystemColors} />
         </div>
@@ -253,7 +251,7 @@ const CaseStudyTwo = () => (
           <img style={styles.portrait} src={cs2DesignSystemText} />
         </div>
       </div>
-      <div className="row-cs">
+      <div className="row-cs align-start">
         <div className="column-cs">
           <img style={styles.portrait} src={cs2DesignSystemButtons} />
         </div>
@@ -355,15 +353,10 @@ const CaseStudyTwo = () => (
         </p>
       </div>
       <div className="column-cs">
-        <div className="row-cs">
-          <img style={styles.portrait} src={cs2SuccessMetric1} />
-        </div>
-        <div className="row-cs">
-          <img style={styles.portrait} src={cs2SuccessMetric2} />
-        </div>
+        <img style={styles.portrait} src={cs2SuccessMetric1} />
       </div>
     </div>
-    <div className="row-cs">
+    <div className="row-cs reverse">
       <div className="column-cs">
         <img style={styles.portrait} src={cs2SuccessMetric3} />
       </div>
@@ -439,9 +432,9 @@ const styles = {
     flexDirection: "column",
   },
   portrait: {
-    display: "flex",
-    maxWidth: "60%",
-    alignSelf: "center",
+    // display: "flex",
+    maxWidth: "100%",
+    // alignSelf: "center",
     //TODO: styling for images of different sizes and centering
   },
   icon: {

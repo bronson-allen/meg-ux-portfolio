@@ -4,14 +4,19 @@ import { Link } from "gatsby"
 import "./layout.css"
 import arrowIcon from "../images/arrowIcon.png"
 
-const ProjectCard = ({ title, name, imgSrc, url, text }) => {
-  console.log(imgSrc)
+const ProjectCard = ({ title, name, imgSrc, url, text, size }) => {
+  console.log(size)
+  // const imageSize = size ? size : "70%"
 
   return (
     <div style={styles.mainContainer}>
       <Link to={url}>
         <div style={styles.imageBox}>
-          <img style={styles.image} src={imgSrc} />
+          <img
+            className={size}
+            style={{ maxWidth: size ? size : "70%" }}
+            src={imgSrc}
+          />
         </div>
       </Link>
       <h3>{title}</h3>
@@ -41,9 +46,6 @@ const styles = {
     marginBottom: `var(--space-5)`,
     padding: "16px",
   },
-  image: {
-    maxWidth: "70%",
-  },
   link: {
     display: "flex",
     alignItems: "center",
@@ -62,6 +64,7 @@ ProjectCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  size: PropTypes.string,
 }
 
 export default ProjectCard

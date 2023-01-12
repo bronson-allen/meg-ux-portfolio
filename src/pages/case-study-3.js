@@ -25,8 +25,10 @@ const CaseStudyThree = () => (
   <Layout>
     <div className="row-cs title-cs">
       <div className="column-cs">
-        <h1 className="secondary-color">GLOBAL & DEALERSHIP PRODUCT CREATION</h1>
-        <h4>Kornerstone  Administrative Services, Ken Garff  Automotive Group</h4>
+        <h1 className="secondary-color">
+          GLOBAL & DEALERSHIP PRODUCT CREATION
+        </h1>
+        <h4>Kornerstone Administrative Services, Ken Garff Automotive Group</h4>
       </div>
     </div>
     <div className="row-cs reverse">
@@ -128,7 +130,7 @@ const CaseStudyThree = () => (
         </p>
       </div>
       <div className="column-cs">
-        <img style={styles.portrait} src={pegaImage} />
+        <img className="resize-sm" src={pegaImage} />
       </div>
     </div>
     <hr />
@@ -136,9 +138,7 @@ const CaseStudyThree = () => (
       <div className="row-cs">
         <div className="column-cs">
           <h2 className="color-primary-dark">PROCESS</h2>
-          <h3>
-            PHASE 1: Undertanding the old design
-          </h3>
+          <h3>PHASE 1: Undertanding the old design</h3>
           <p>
             I was assigned to this project when my company decided to make a lot
             of changes to the team. I was put on as the only designer and was
@@ -160,27 +160,24 @@ const CaseStudyThree = () => (
         </div>
       </div>
       <div className="row-cs">
-            <div className="column-cs">
-              <h3>
-                PHASE 2: Generate the new design{" "}
-              </h3>
-              <p>
-                Working closely with the product manager and lead Pega
-                developer, the wireframes were created for the global and
-                dealership levels with an approach of simplicity. User cases for
-                a Kornerstone Admin and a Dealership Owner Admin were used.
-                After about three rounds of wireframes, the designs were
-                approved by the client. I then made the high fidelity designs
-                using the design system that was already in play for the entire
-                product.{" "}
-              </p>
-            </div>
-          </div>
+        <div className="column-cs">
+          <h3>PHASE 2: Generate the new design </h3>
+          <p>
+            Working closely with the product manager and lead Pega developer,
+            the wireframes were created for the global and dealership levels
+            with an approach of simplicity. User cases for a Kornerstone Admin
+            and a Dealership Owner Admin were used. After about three rounds of
+            wireframes, the designs were approved by the client. I then made the
+            high fidelity designs using the design system that was already in
+            play for the entire product.{" "}
+          </p>
+        </div>
+      </div>
       <div className="row-cs">
         <div className="column-cs">
-            <div className="column-cs">
-              <img style={styles.portrait} src={cs3ProcessImage1} />
-            </div>
+          <div className="column-cs">
+            <img style={styles.portrait} src={cs3ProcessImage1} />
+          </div>
         </div>
         <div className="column-cs">
           <img style={styles.portrait} src={cs3ProcessImage2} />
@@ -188,11 +185,11 @@ const CaseStudyThree = () => (
       </div>
     </div>
     <hr />
-      <div className="row-cs">
-        <div className="column-cs">
-          <h2 className="color-primary-dark">PERSONAS</h2>
-        </div>
+    <div className="row-cs">
+      <div className="column-cs">
+        <h2 className="color-primary-dark">PERSONAS</h2>
       </div>
+    </div>
     <div className="row-cs align-start">
       <div className="column-cs">
         <img style={styles.icon} src={iconPersona} />
@@ -295,7 +292,7 @@ const CaseStudyThree = () => (
         </p>
       </div>
     </div>
-    <div className="row-cs">
+    <div className="row-cs resize-lg">
       <img style={styles.portrait} src={cs3UsabilityTesting} />
     </div>
     <hr />
