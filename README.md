@@ -97,3 +97,15 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+## Deploying this site to Cpanel
+
+1. Checkout branch
+2. Make changes
+3. BUILD the project
+4. Commit changes
+5. Push
+6. In Cpanel -> git version control -> pull changes
+7. Deploy Head commit in Cpanel
+
+the build step is important because Cpanel updates the "repositories" folder with the code from this repo, but the cpanel.yml file specifies to put the built files from this public folder into the subdomain folder in cpanel and those are the built files. So build to update the public dir and then deploy and the changes will show up correctly in cpanel's folder structure
