@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[624],{1407:function(e,t,a){a.r(t),a.d(t,{Head:function(){return o}});var l=a(7294),r=a(1883),n=a(4815),c=a(9357);const o=()=>l.createElement(c.Z,{title:"Work"});t.default=()=>l.createElement(n.Z,null,l.createElement("h1",null,"Hi from the work page"),l.createElement("p",null,"Welcome to the work page"),l.createElement(r.Link,{to:"/"},"Go back to the homepage"))}}]);
+//# sourceMappingURL=component---src-pages-work-js-afe9e761387d45369db7.js.map

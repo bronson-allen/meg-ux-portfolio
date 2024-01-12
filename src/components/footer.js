@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "./layout.css"
-import resumePDF from "../images/MeganAllen_Resume2021.pdf"
+import resumePDF from "../images/MeganAllen_Resume2024.pdf"
 
 function Header() {
   return (
@@ -74,7 +74,7 @@ function Header() {
               href="https://www.linkedin.com/in/bronson-z-allen/"
               style={{ marginLeft: "5px" }}
             >
-              Bronson Z Allen
+              Bronson Z. Allen
             </a>
           </div>
         </div>
