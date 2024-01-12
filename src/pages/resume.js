@@ -3,7 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import resumeImg from "../images/resume.png"
-import resumePDF from "../images/MeganAllen_Resume2021.pdf"
+import resumePDF from "../images/MeganAllen_Resume2024.pdf"
 import "../components/layout.css"
 
 const ResumePage = () => {
