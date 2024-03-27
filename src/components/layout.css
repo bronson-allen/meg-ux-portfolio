@@ -405,7 +405,7 @@ pre tt:after {
 }
 
 .title-cs {
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-4);
   align-items: flex-start;
 }
 

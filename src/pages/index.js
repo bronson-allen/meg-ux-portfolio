@@ -8,6 +8,9 @@ import iphoneImage from "../images/iPhone1.png"
 import macbookImage1 from "../images/macBookPro1.png"
 import macImage from "../images/mac.png"
 import macbookImage2 from "../images/macBookPro2.png"
+import cs5Image from "../images/cs5Image.png"
+
+
 
 const projects = [
   {
@@ -37,6 +40,20 @@ const projects = [
     name: "Digital Coupon Book",
     url: "case-study-4",
     imgSrc: macbookImage2,
+    text: "Turned a paper/in-person process of delivering coupons to participants involved in Success in Education programs into a streamlined digital experience in which users can browse and redeem coupons for local businesses.",
+  },
+  {
+    title: "Lessen, Turns & Renovations",
+    name: "Home Inspection Tool",
+    url: "case-study-5",
+    imgSrc: cs5Image,
+    text: "Turned a paper/in-person process of delivering coupons to participants involved in Success in Education programs into a streamlined digital experience in which users can browse and redeem coupons for local businesses.",
+  },
+  {
+    title: "Lessen, Turns & Renovations",
+    name: "Home Inspection Tool",
+    url: "case-study-5",
+    imgSrc: cs5Image,
     text: "Turned a paper/in-person process of delivering coupons to participants involved in Success in Education programs into a streamlined digital experience in which users can browse and redeem coupons for local businesses.",
   },
 ]
@@ -73,7 +90,20 @@ const IndexPage = () => {
           ))}
         </div>
         <div style={styles.row}>
-          {projects.slice(2).map((project, i) => (
+          {projects.slice(2, 4).map((project, i) => (
+            <div key={i} style={styles.column}>
+              <ProjectCard
+                title={project.title}
+                name={project.name}
+                imgSrc={project.imgSrc}
+                url={project.url}
+                text={project.text}
+              />
+            </div>
+          ))}
+        </div>
+        <div style={styles.row}>
+          {projects.slice(4, 6).map((project, i) => (
             <div key={i} style={styles.column}>
               <ProjectCard
                 title={project.title}
