@@ -1,111 +1,170 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# Megan Allen Design Portfolio
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This is the source code for [meganallendesign.com](https://meganallendesign.com), a personal UX portfolio site built with Gatsby and React. The site showcases design projects, case studies, and information about Megan Allen’s work and process.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+## Project Structure
 
-## 🚀 Quick start
+- **`src/`**: All site pages and React components.
+- **`public/`**: Gatsby’s build output; static files for deployment.
+- **`gatsby-config.js`**: Site metadata and plugin configuration.
+- **`.cpanel.yml`**: Deployment script for cPanel.
+- **`package.json`**: Project dependencies and scripts.
 
-1.  **Create a Gatsby site.**
+## Development
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the default starter.
+To work on this site locally:
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+1. **Install dependencies**  
+   ```
+   npm install
+   ```
 
-1.  **Start developing.**
+2. **Start the development server**  
+   ```
+   npm run develop
+   ```
+   The site will be available at [http://localhost:8000](http://localhost:8000).
 
-    Navigate into your new site’s directory and start it up.
+3. **Edit source files**  
+   Make changes in the `src/` directory. Hot-reloading is enabled.
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+## Building for Production
 
-1.  **Open the source code and start editing!**
+Before deploying, build the site:
 
-    Your site is now running at `http://localhost:8000`!
+```
+npm run build
+```
 
-    Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
+This generates the static site in the `public/` folder.
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+## Deploying to cPanel
 
-## 🚀 Quick start (Gatsby Cloud)
+Deployment uses cPanel’s Git Version Control and a `.cpanel.yml` script.
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+**Steps:**
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-default)
+1. **Make changes locally**  
+   Edit files and commit your changes.
 
-## 🧐 What's inside?
+2. **Build the project**  
+   ```
+   npm run build
+   ```
+   This updates the `public/` folder with the latest static files.
 
-A quick look at the top-level files and directories you'll see in a typical Gatsby project.
+3. **Push changes to GitHub**  
+   ```
+   git add .
+   git commit -m "Update site"
+   git push
+   ```
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package.json
-    └── README.md
+4. **Pull changes in cPanel**  
+   - Log in to cPanel.
+   - Go to **Git Version Control**.
+   - Select your repo (`/home/bronson1/repos/meg-ux-portfolio.git`).
+   - Click **Pull or Deploy** to fetch the latest commit.
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+5. **Deploy the build**  
+   - cPanel runs the `.cpanel.yml` script, which copies the contents of `public/` to `/home/bronson1/public_html/meganallendesign.com/`.
+   - Your site updates at [meganallendesign.com](https://meganallendesign.com).
 
-1.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+**Note:**  
+The build step is essential. Only files in the `public/` folder are deployed to the live site.
 
-1.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## Customization
 
-1.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+- Update site content and structure in `src/`.
+- Change site metadata in `gatsby-config.js`.
+- Adjust deployment settings in `.cpanel.yml` if your hosting paths change.
 
-1.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
+## License
 
-1.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+This project is for Megan Allen’s personal portfolio. Please contact Megan for reuse or collaboration.
 
-1.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+```<!-- filepath: c:\Users\brons\Documents\dev\meg-ux-portfolio\README.md -->
+# Megan Allen Design Portfolio
 
-1.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+This is the source code for [meganallendesign.com](https://meganallendesign.com), a personal UX portfolio site built with Gatsby and React. The site showcases design projects, case studies, and information about Megan Allen’s work and process.
 
-1.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+## Project Structure
 
-1.  **`README.md`**: A text file containing useful reference information about your project.
+- **`src/`**: All site pages and React components.
+- **`public/`**: Gatsby’s build output; static files for deployment.
+- **`gatsby-config.js`**: Site metadata and plugin configuration.
+- **`.cpanel.yml`**: Deployment script for cPanel.
+- **`package.json`**: Project dependencies and scripts.
 
-## 🎓 Learning Gatsby
+## Development
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+To work on this site locally:
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+1. **Install dependencies**  
+   ```
+   npm install
+   ```
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+2. **Start the development server**  
+   ```
+   npm run develop
+   ```
+   The site will be available at [http://localhost:8000](http://localhost:8000).
 
-## 💫 Deploy
+3. **Edit source files**  
+   Make changes in the `src/` directory. Hot-reloading is enabled.
 
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/products/cloud/)
+## Building for Production
 
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
+Before deploying, build the site:
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+```
+npm run build
+```
 
-## Deploying this site to Cpanel
+This generates the static site in the `public/` folder.
 
-1. Checkout branch
-2. Make changes
-3. BUILD the project
-4. Commit changes
-5. Push
-6. In Cpanel -> git version control -> pull changes
-7. Deploy Head commit in Cpanel
+## Deploying to cPanel
 
-the build step is important because Cpanel updates the "repositories" folder with the code from this repo, but the cpanel.yml file specifies to put the built files from this public folder into the subdomain folder in cpanel and those are the built files. So build to update the public dir and then deploy and the changes will show up correctly in cpanel's folder structure
+Deployment uses cPanel’s Git Version Control and a `.cpanel.yml` script.
+
+**Steps:**
+
+1. **Make changes locally**  
+   Edit files and commit your changes.
+
+2. **Build the project**  
+   ```
+   npm run build
+   ```
+   This updates the `public/` folder with the latest static files.
+
+3. **Push changes to GitHub**  
+   ```
+   git add .
+   git commit -m "Update site"
+   git push
+   ```
+
+4. **Pull changes in cPanel**  
+   - Log in to cPanel.
+   - Go to **Git Version Control**.
+   - Select your repo (`/home/bronson1/repos/meg-ux-portfolio.git`).
+   - Click **Pull or Deploy** to fetch the latest commit.
+
+5. **Deploy the build**  
+   - cPanel runs the `.cpanel.yml` script, which copies the contents of `public/` to `/home/bronson1/public_html/meganallendesign.com/`.
+   - Your site updates at [meganallendesign.com](https://meganallendesign.com).
+
+**Note:**  
+The build step is essential. Only files in the `public/` folder are deployed to the live site.
+
+## Customization
+
+- Update site content and structure in `src/`.
+- Change site metadata in `gatsby-config.js`.
+- Adjust deployment settings in `.cpanel.yml` if your hosting paths change.
+
+## License
+
+This project is for Megan Allen’s personal portfolio. Please contact Megan for reuse or collaboration.
