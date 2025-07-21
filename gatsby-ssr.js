@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
  */
-import React from "react"
+const React = require("react")
 
 /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
@@ -13,10 +13,10 @@ exports.onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
 
   // Add security headers
   setHeadComponents([
-    <meta
-      key="http-equiv-csp"
-      httpEquiv="Content-Security-Policy"
-      content="upgrade-insecure-requests"
-    />,
+    React.createElement("meta", {
+      key: "http-equiv-csp",
+      httpEquiv: "Content-Security-Policy",
+      content: "upgrade-insecure-requests"
+    })
   ])
 }
