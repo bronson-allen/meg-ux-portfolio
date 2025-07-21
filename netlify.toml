@@ -1,0 +1,13 @@
+# Netlify configuration file
+# Force HTTPS
+[[redirects]]
+  from = "http://:splat"
+  to = "https://:splat"
+  status = 301
+  force = true
+
+# SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
