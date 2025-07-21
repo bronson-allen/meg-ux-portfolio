@@ -68,8 +68,7 @@ const IndexPage = () => {
               Hello, I&apos;m Megan!
             </h3>
             <p>
-              I am a User Experience Designer, based in Chicago, currently
-              creating digital experiences at Hoverstate.
+              I am a User Experience Designer, based in Chicago.
             </p>
           </div>
         </div>
