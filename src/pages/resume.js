@@ -3,7 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import resumeImg from "../images/resume.png"
-import resumePDF from "../images/MeganAllen_Resume2024.pdf"
+import resumePDF from "../images/MeganAllen_Resume_2025.pdf"
 import "../components/layout.css"
 
 const ResumePage = () => {
@@ -70,6 +70,9 @@ const styles = {
   image: {
     alignSelf: "center",
     maxWidth: "100%",
+    boxShadow: "0 6px 24px rgba(0, 0, 0, 0.12)",
+    borderRadius: "8px",
+    background: "white",
   },
   holder: {
     width: "150px",
