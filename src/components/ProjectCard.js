@@ -14,8 +14,9 @@ const ProjectCard = ({ title, name, imgSrc, url, text, size }) => {
         <div style={styles.imageBox}>
           <img
             className={size}
-            style={{ maxWidth: size ? size : "70%" }}
+            style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
             src={imgSrc}
+            alt={name}
           />
         </div>
       </Link>
@@ -39,12 +40,12 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     minWidth: "300px",
-    minHeight: "450px",
+    height: "460px",
     background: "#FFFFFF",
     boxShadow: "2px 6px 20px 12px rgba(160, 160, 160, 0.25)",
     borderRadius: "12px",
     marginBottom: `var(--space-5)`,
-    padding: "16px",
+    padding: "40px",
   },
   link: {
     display: "flex",

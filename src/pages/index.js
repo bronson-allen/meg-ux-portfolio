@@ -9,10 +9,25 @@ import macbookImage1 from "../images/macBookPro1.png"
 import macImage from "../images/mac.png"
 import macbookImage2 from "../images/macBookPro2.png"
 import cs5Image from "../images/cs5Image.png"
+import cs6Image from "../images/cs6Image.png"
 
 
 
 const projects = [
+  {
+    title: "Lessen",
+    name: "AI Billing Audit Desk",
+    url: "case-study-6",
+    imgSrc: cs6Image,
+    text: "Integrated AI capabilities into the vendor invoice submission process and created a new audit desk for the billing team to efficiently approve, manage and resolve submitted invoices."
+  },
+  {
+    title: "Lessen, Turns & Renovations",
+    name: "Home Inspection Tool",
+    url: "case-study-5",
+    imgSrc: cs5Image,
+    text: "Turned a paper/in-person process of delivering coupons to participants involved in Success in Education programs into a streamlined digital experience in which users can browse and redeem coupons for local businesses.",
+  },
   {
     title: "Keys to Success",
     name: "Admin App Dashboard",
@@ -42,20 +57,7 @@ const projects = [
     imgSrc: macbookImage2,
     text: "Turned a paper/in-person process of delivering coupons to participants involved in Success in Education programs into a streamlined digital experience in which users can browse and redeem coupons for local businesses.",
   },
-  {
-    title: "Lessen, Turns & Renovations",
-    name: "Home Inspection Tool",
-    url: "case-study-5",
-    imgSrc: cs5Image,
-    text: "Turned a paper/in-person process of delivering coupons to participants involved in Success in Education programs into a streamlined digital experience in which users can browse and redeem coupons for local businesses.",
-  },
-  {
-    title: "Lessen, Turns & Renovations",
-    name: "Home Inspection Tool",
-    url: "case-study-5",
-    imgSrc: cs5Image,
-    text: "Turned a paper/in-person process of delivering coupons to participants involved in Success in Education programs into a streamlined digital experience in which users can browse and redeem coupons for local businesses.",
-  },
+  
 ]
 
 const IndexPage = () => {
