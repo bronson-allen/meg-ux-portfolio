@@ -114,7 +114,7 @@ const CaseStudyOne = () => (
         </p>
       </div>
     </div>
-    
+    <hr />
     <div className="row-cs">
       <div className="column-cs">
         <h2 className="color-primary-dark">CREATING HARD STOP, SOFT STOP, AND INTERNAL RULES</h2>
@@ -125,12 +125,12 @@ const CaseStudyOne = () => (
           Later, an overview of these rules would all be displayed on the Invoice Audit Desk (shown to the right).
         </p>
         <h3>HARD STOP</h3>
-        <img style={{ width: "100%", height: "100px", objectFit: "contain", display: "block" }} src={cs6hardStop} />
+        <img style={{ width: "100%", height: "80px", objectFit: "contain", display: "block" }} src={cs6hardStop} />
         <p>
           These are rules that a vendor must follow to submit an invoice. If any of these rules are not met, the submission is blocked, and the vendor must correct the issue before proceeding. These rules prevent common errors, such as an overtime fee being too high or tax being improperly applied to the invoice.
         </p>
         <h3>SOFT STOP</h3>
-        <img style={{ width: "100%", height: "100px", objectFit: "contain", display: "block" }} src={cs6softStop} />
+        <img style={{ width: "100%", objectFit: "contain", display: "block" }} src={cs6softStop} />
         <p>
           These rules are designed to guide users toward best practices without blocking their workflow. The system provides immediate callouts when a rule is not followed, but vendors can still submit their invoice. This flexibility is crucial for situations where a rule might not apply to every invoice or for non-critical items. For example, the system might flag missing documentation or incorrect usage of a notes section, allowing the user to decide whether to correct the issue before submission.
         </p>
@@ -141,10 +141,10 @@ const CaseStudyOne = () => (
       </div>
       <div className="column-cs" style={{ display: "flex", flexDirection: "column", gap: "var(--space-3)" }}>
         <div style={{ flex: 1, padding: "var(--space-3)" }}>
-          <img style={{ width: "100%", objectFit: "contain", display: "block" }} src={cs6HS1} />
+          <img style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} src={cs6HS1} />
         </div>
         <div style={{ flex: 1, padding: "var(--space-3)" }}>
-          <img style={{ width: "100%", objectFit: "contain", display: "block" }} src={cs6HS2} />
+          <img style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} src={cs6HS2} />
         </div>
       </div>
 
