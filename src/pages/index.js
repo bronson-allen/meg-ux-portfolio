@@ -70,7 +70,7 @@ const IndexPage = () => {
               Hello, I&apos;m Megan!
             </h3>
             <p>
-              I am a User Experience Designer, based in Chicago.
+              I am a Senior Product Designer, based in Chicago.
             </p>
           </div>
         </div>
